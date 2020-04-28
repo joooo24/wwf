@@ -1,11 +1,21 @@
 @import "/css/reset.css";
+/* font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Black Han Sans', sans-serif; */
 
 * {
   box-sizing: border-box;
+}
+body{
+  background-color: #fff;
 }
 a {
   text-decoration: none;
 }
 li {
   list-style: none;
+}
+.inner {
+  max-width: 1280px;
+  margin: auto;
 }
