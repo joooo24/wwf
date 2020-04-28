@@ -5,8 +5,11 @@ font-family: 'Black Han Sans', sans-serif; */
 
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+  font-size: 16px;
 }
-body{
+body {
   background-color: #fff;
 }
 a {
@@ -18,4 +21,159 @@ li {
 .inner {
   max-width: 1280px;
   margin: auto;
+}
+section {
+  position: relative;
+}
+/* sub1 공통속성 */
+section:nth-child(n + 2) {
+  padding: 20px 0;
+}
+/* .sub1_txtbox 공통속성 */
+.sub1_txtbox {
+  width: 100%;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+  padding: 80px 0;
+}
+.txt_bg {
+  width: 950px;
+  height: 330px;
+  background-image: url(../img/what.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.txtline {
+  position: absolute;
+  top: 0px;
+}
+
+/* sub1_sect1 */
+
+.sub1_sect1 > img {
+  width: 100%;
+  max-height: 800px;
+  display: block;
+}
+.sub1_sect1 .sub1_txtbox {
+  padding-top: 150px;
+  margin-top: -520px;
+  height: 600px;
+}
+
+.txt_bg1 {
+  background-image: url(../img/what.png);
+  bottom: 0;
+  right: 0;
+}
+.txtbar {
+  margin-right: 30px;
+}
+.sub1_txtbox h2 {
+  font-size: 38px;
+}
+.sub1_txtbox p {
+  font-size: 16px;
+  margin-top: 50px;
+}
+/* sub1_sect2 */
+
+.sub1_visit {
+  width: 65%;
+  height: 300px;
+  background-image: url(../img/sub1_visit.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  float: right;
+}
+
+.sub1_visit p {
+  font-size: 26px;
+  color: #fff;
+  position: absolute;
+  left: 30px;
+  bottom: 20px;
+}
+.sub1_visit b {
+  font-size: 30px;
+  color: #f8be03;
+}
+
+/* sub1_sect3 */
+
+.sub1_sect3 {
+  clear: both;
+}
+.sub1_sect3 .inner > img {
+  display: block;
+  margin: 100px auto 20px;
+}
+.sub1_sect3 .sub1_txtbox {
+  height: 500px;
+  right: -200px;
+}
+.sub1_sect3 .sub1_txtbox .txtbar {
+  padding-left: 200px;
+}
+
+.txt_bg2 {
+  background-image: url(../img/mean.png);
+  bottom: 0;
+  right: 0;
+}
+/* sub1_sect4 */
+
+.sub1_sect4 .inner > img {
+  width: 600px;
+  display: block;
+  margin: 100px auto 20px;
+}
+.sub1_sect4 .sub1_txtbox {
+  height: 450px;
+}
+.txt_bg3 {
+  background-image: url(../img/work.png);
+  bottom: 0;
+  right: 0;
+}
+.sub1_sect4 .txtline {
+  left: -700px;
+}
+
+/* sub1_sect5 */
+.sub1_sect5 {
+}
+.sub1_korea {
+  background-image: url(../img/uEF9gZU.jpg);
+  width: 90%;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.sub1_korea p {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 120px;
+  color: #fff;
+  position: absolute;
+  bottom: -35px;
+  left: 50px;
+}
+
+.sub1_sect5 .sub1_txtbox {
+  height: 600px;
+  right: -200px;
+}
+
+.sub1_sect5 .sub1_txtbox .txtbar {
+  padding-left: 200px;
 }

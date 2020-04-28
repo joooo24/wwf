@@ -5,6 +5,9 @@ font-family: 'Black Han Sans', sans-serif; */
 
 * {
   box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+  font-size: 16px;
 }
 a {
   text-decoration: none;
