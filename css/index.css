@@ -92,3 +92,180 @@ font-family: 'Black Han Sans', sans-serif; */
 }
 
 /*-------------section2 혜원 끝----------------------*/
+/* header--------------------------------------- */
+header {
+  width: 100%; height: 85px;
+  position: fixed;
+  z-index: 999;
+  background: rgba(255, 255, 255, .4)
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  width: 100px;
+  padding: 8px 0;
+}
+header h1 a{
+  display: block;
+  height: 100%;
+}
+header h1 img {
+  width: 100%;
+}
+.nav{
+  width: 1120px; height: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav li{
+  width: 25%;
+}
+.nav li a {
+  width: 100%; height: 100%;
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 85px;
+  position: relative;
+}
+.nav span{
+  position: absolute;
+  left: 0; bottom: 0;
+  display: block;
+  width: 0; height: 5px;
+  background: #F8BE03;
+  transition: .5s;
+}
+.nav li a:hover span{
+  width: 100%;
+}
+/* sect1 시작--------------------------------- */
+.sect1{
+  height: 100vh;
+  /* overflow: hidden; */
+  background: url(../img/main_img.jpg);
+  background-size: 100%;
+  position: relative;
+}
+.sect1 video{
+  width: 100%;
+  margin-top: -47px;
+}
+.sect1 h2{
+  font-size: 65px;
+  color: #fff;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sect1 span{
+  font-size: 65px;
+  color: #F8BE03;
+}
+.sect1 em{
+  display: block;
+  width: 520px; height: 3px;
+  background: rgba(255, 255, 255, .8);
+  position: absolute;
+}
+.sect1 em.leftLine{
+  top: 45%; left: 0;
+}
+.sect1 em.rightLine{
+  top: 55%; right: 0;
+}
+/*****************sect5*******************/
+.sect5 {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/beach-394503_1280_2.jpg);
+}
+.sect5 > .inner {
+  padding-top: 200px;
+}
+.sect5 h2 {
+  font-size: 60px;
+  color: white;
+  font-weight: 100;
+  font-family: "Black Han Sans", sans-serif;
+}
+.sect5 h2 em {
+  font-size: 110px;
+  font-family: "Black Han Sans", sans-serif;
+}
+.sect5 h2:first-child em {
+  color: #00aeef;
+}
+.sect5 h2:last-child em {
+  color: #f8be03;
+}
+.sect5-line {
+  position: absolute;
+  width: 15%;
+  height: 3px;
+  background-color: white;
+}
+.sect5-R-line {
+  top: 30%;
+  right: 0;
+  width: 40%;
+}
+.sect5-L-line {
+  top: 65%;
+  left: 0;
+}
+.sect5 button {
+  width: 250px;
+  font-size: 1.5rem;
+  padding: 10px 70px;
+  color: white;
+  background-color: #00aeef;
+  position: absolute;
+  top: -1000%;
+  right: -105%;
+  font-family: "Roboto", sans-serif;
+}
+footer {
+  width: 100%;
+  height: 20%;
+  background-color: #323232;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+footer .ft-logo {
+  width: 20%;
+  height: 100%;
+  background-color: green;
+}
+footer div:last-child {
+  width: 80%;
+  height: 100%;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+footer div:last-child .df {
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+.ft-bar {
+  color: gray !important;
+}
+footer div:last-child ul li,
+footer div:last-child ul li a {
+  color: white;
+  font-weight: 100;
+  font-size: 14px !important;
+}
+footer div:last-child>div{
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin: 10px 0;
+}
+
