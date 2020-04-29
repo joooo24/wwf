@@ -1,23 +1,8 @@
-@import "/css/reset.css";
+@import "global.css";
 /* font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Black Han Sans', sans-serif; */
-* {
-  box-sizing: border-box;
-  font-family: "Noto Sans KR", sans-serif;
-  color: #000;
-  font-size: 16px;
-}
-a {
-  text-decoration: none;
-}
-li {
-  list-style: none;
-}
-.inner {
-  max-width: 1280px;
-  margin: auto;
-}
+
 /* header */
 
 header {
