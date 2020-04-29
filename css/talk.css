@@ -28,5 +28,9 @@ font-family: 'Black Han Sans', sans-serif; */
   color: #f8be03;
   margin-left: 30px;
   border-bottom: 10px solid #f8be03;
-  width: 100%;
+  width:62%;
+}
+.sub03-sect01 p{
+  width: 80%;
+ text-align: right;
 }
