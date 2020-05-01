@@ -192,6 +192,7 @@ span {
   height: 100vh;
   background-image: url(../img/beach-394503_1280_2.jpg);
   position: relative;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .sect5 > .inner {
   padding-top: 200px;
@@ -199,44 +200,40 @@ span {
 .sect5 h2 {
   font-size: 60px;
   color: white;
-  font-weight: 100;
-  font-family: "Black Han Sans", sans-serif;
 }
 .sect5 h2 em {
   font-size: 110px;
-  font-family: "Black Han Sans", sans-serif;
+  font-weight: 800;
 }
-.sect5 h2:first-child em {
+.sect5-f em {
   color: #00aeef;
 }
-.sect5 h2:last-child em {
+.sect5-l em {
   color: #f8be03;
+}
+.sect5 button {
+  width: 250px;
+  font-size: 1.5rem;
+  padding: 10px 70px;
+  margin-top: 70px;
+  color: white;
+  background-color: #00aeef;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .sect5-line {
   position: absolute;
   width: 15%;
-  height: 3px;
+  height: 2px;
   background-color: white;
 }
 .sect5-R-line {
-  top: 30%;
+  top: 31%;
   right: 0;
   width: 40%;
 }
 .sect5-L-line {
   top: 65%;
   left: 0;
-}
-.sect5 button {
-  width: 250px;
-  font-size: 1.5rem;
-  padding: 10px 70px;
-  color: white;
-  background-color: #00aeef;
-  position: absolute;
-  top: -1000%;
-  right: -105%;
-  font-family: "Roboto", sans-serif;
 }
 footer {
   width: 100%;
@@ -258,7 +255,7 @@ footer div:last-child {
   padding-left: 50px;
 }
 footer div:last-child .df {
-  width: 60%;
+  width: 30%;
   justify-content: space-between;
   align-items: center;
 }
@@ -272,8 +269,8 @@ footer div:last-child ul li a {
   font-size: 14px !important;
 }
 footer div:last-child > div {
-  width: 100%;
+  width: 80%;
   height: 1px;
   background-color: gray;
-  margin: 10px 0;
+  margin: 20px 0;
 }
