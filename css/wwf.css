@@ -257,7 +257,6 @@ p.sub1_active {
   position: relative;
   width: 1000px;
   margin: 50px auto 100px;
-  border: 1px solid #000;
 }
 .sub1_picture img {
   display: block;
