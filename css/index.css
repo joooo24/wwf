@@ -5,69 +5,267 @@ font-family: 'Black Han Sans', sans-serif; */
 
 /* sect3 */
 
-.sect3 {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-}
-.sect3_txt {
-  width: 100%;
-  height: 25%;
-  position: relative;
-}
-.sect3 p {
-  font-size: 50px;
-  font-family: "Black Han Sans", sans-serif;
-  text-align: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-.sect3_img {
-  background-image: url(../img/industry.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
-  height: 75%;
-}
-/* sect4 */
 
-.sect4 {
+/*-------------section2 혜원----------------------*/
+
+.sect2{
+  height: 100vh;
   position: relative;
+}
+
+.sect2_txtbox>div>p,span{
+  font-family: 'Black Han Sans', sans-serif;
+  font-size: 80px;
+}
+
+.sect2_txt1{
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  z-index: 99;
+}
+
+
+.sect2_txt2{
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+}
+
+.sect2_txt1 p:nth-of-type(1){
+  color: red;
+}
+.sect2_txt1 p:nth-of-type(2){
+  color: #707070;
+}
+
+.sect2_txt1 span{
+  background-color: #F8BE03;
+  text-align: right;
+  padding: 7px 10px 0 10px;
+}
+
+.sect2_txtbox span{
+  /* display: block; */
+}
+
+.sect2_txt2 p span{
+  display: block;
+  color: #00AEEF;
+  width: 700px;
+}
+
+.sect2_bgB{
+  width: 40%;
+  background-color: #00AEEF;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+.sect2_bgB-img{
+  width: 100%;
+  position: relative;
+  top: -10px;
+  right: -30px;
+}
+.sect2_bgB-img img{
+  width: 100%;
+}
+
+.sect2_bgY{
+  width: 25%;
+  background-color: #F8BE03;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.sect2_bgY-img{
+  width: 100%;
+  position: relative;
+  bottom: 20px;
+  left: 25px;
+}
+.sect2_bgY-img img{
+  width: 100%;
+}
+
+/*-------------section2 혜원 끝----------------------*/
+/* header--------------------------------------- */
+header {
+  width: 100%; height: 85px;
+  position: fixed;
+  z-index: 999;
+  background: rgba(255, 255, 255, .4)
+}
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  width: 100px;
+  padding: 8px 0;
+}
+header h1 a{
+  display: block;
+  height: 100%;
+}
+header h1 img {
+  width: 100%;
+}
+.nav{
+  width: 1120px; height: 85px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav li{
+  width: 25%;
+}
+.nav li a {
+  width: 100%; height: 100%;
+  display: block;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  line-height: 85px;
+  position: relative;
+}
+.nav span{
+  position: absolute;
+  left: 0; bottom: 0;
+  display: block;
+  width: 0; height: 5px;
+  background: #F8BE03;
+  transition: .5s;
+}
+.nav li a:hover span{
+  width: 100%;
+}
+/* sect1 시작--------------------------------- */
+.sect1{
+  height: 100vh;
+  /* overflow: hidden; */
+  background: url(../img/main_img.jpg);
+  background-size: 100%;
+  position: relative;
+}
+.sect1 video{
+  width: 100%;
+  margin-top: -47px;
+}
+.sect1 h2{
+  font-size: 65px;
+  color: #fff;
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+}
+.sect1 span{
+  font-size: 65px;
+  color: #F8BE03;
+}
+.sect1 em{
+  display: block;
+  width: 520px; height: 3px;
+  background: rgba(255, 255, 255, .8);
+  position: absolute;
+}
+.sect1 em.leftLine{
+  top: 45%; left: 0;
+}
+.sect1 em.rightLine{
+  top: 55%; right: 0;
+}
+/*****************sect5*******************/
+.sect5 {
   width: 100%;
   height: 100vh;
+  background-image: url(../img/beach-394503_1280_2.jpg);
+}
+.sect5 > .inner {
+  padding-top: 200px;
+}
+.sect5 h2 {
+  font-size: 60px;
+  color: white;
+  font-weight: 100;
   font-family: "Black Han Sans", sans-serif;
-  display: flex;
 }
-.sect4 > div {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
+.sect5 h2 em {
+  font-size: 110px;
+  font-family: "Black Han Sans", sans-serif;
 }
-.sect4_txt {
-  width: 100%;
+.sect5 h2:first-child em {
+  color: #00aeef;
+}
+.sect5 h2:last-child em {
+  color: #f8be03;
+}
+.sect5-line {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  width: 15%;
+  height: 3px;
+  background-color: white;
 }
-.sect4 p {
-  font-family: "Black Han Sans", sans-serif;
-  font-size: 70px;
-  text-align: center;
+.sect5-R-line {
+  top: 30%;
+  right: 0;
+  width: 40%;
 }
-.sect4_p {
-  color: #fff;
+.sect5-L-line {
+  top: 65%;
+  left: 0;
 }
-.sect4_question {
+.sect5 button {
+  width: 250px;
+  font-size: 1.5rem;
+  padding: 10px 70px;
+  color: white;
   background-color: #00aeef;
-  background-image: url(../img/question.png);
+  position: absolute;
+  top: -1000%;
+  right: -105%;
+  font-family: "Roboto", sans-serif;
 }
-.sect4_exclamation {
-  background-color: #f8be03;
-  background-image: url(../img/exclamation.png);
+footer {
+  width: 100%;
+  height: 20%;
+  background-color: #323232;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
+footer .ft-logo {
+  width: 20%;
+  height: 100%;
+  background-color: green;
+}
+footer div:last-child {
+  width: 80%;
+  height: 100%;
+  padding-top: 30px;
+  padding-left: 50px;
+}
+footer div:last-child .df {
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+.ft-bar {
+  color: gray !important;
+}
+footer div:last-child ul li,
+footer div:last-child ul li a {
+  color: white;
+  font-weight: 100;
+  font-size: 14px !important;
+}
+footer div:last-child>div{
+  width: 100%;
+  height: 1px;
+  background-color: gray;
+  margin: 10px 0;
+}
+
