@@ -2,3 +2,237 @@
 /* font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Black Han Sans', sans-serif; */
+.main_visual{
+    width: 100%; height: 60vh;
+    background: url(../img/20171023_013.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.main_visual p{
+    font-size: 120px;
+    color: #fff;
+    line-height: 120px;
+    margin-left: 180px;
+    padding-top: 160px;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+.wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.title{
+    background: url(../img/bar_b.jpg) no-repeat;
+    padding: 80px 0;
+    position: relative;
+}
+.title h2{
+    font-size: 28px;
+    position: absolute;
+    bottom: 0; left: 35px;
+}
+.worldMap{
+    height: 90vh;
+    position: relative;
+}
+.worldMap>*{
+    position: absolute;
+}
+.worldMap .mapBG{
+    width: 100%; height: 90vh;
+    background: url(../img/map.png) no-repeat center;
+    background-size: 100%;
+    opacity: .5;
+}
+.actText h3{
+    display: inline-block;
+    font-size: 24px;
+    background-color: #000;
+    color: #F8BE03;
+    padding: 5px 8px;
+    font-weight: 500;
+}
+.actText>p{
+    padding-top: 15px;
+}
+.textBoxAct1{
+    top: 150px; left: 250px;
+}
+.textBoxAct2{
+    top: 300px; right: 100px;
+}
+.textBoxAct2 li{
+    list-style: square;
+    padding-top: 15px;
+}
+.textBoxAct3{
+    bottom: 180px; left: 200px;
+}
+.textLine{
+    display: block;
+    width: 70px; height: 3px;
+    background: #000;
+    position: absolute;
+    top: 23px; left: -70px;
+}
+.textLine em.circleB{
+    display: block;
+    width: 20px; height: 20px;
+    border-radius: 100%;
+    border: 2px solid #000;
+    position: absolute;
+    top: -8px; left: -5px;
+}
+.textLine em.circleS{
+    display: block;
+    width: 10px; height: 10px;
+    border-radius: 100%;
+    background: #000;
+    position: absolute;
+    top: -3px;
+}
+.textBoxAct2 .textLine{
+    width: 100px;
+    left: 200px;
+}
+.textBoxAct2 em.circleB{
+    left: 85px;
+}
+.textBoxAct2 em.circleS{
+    right: 0;
+}
+.goal{
+    background: #F8BE03;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.goal_icon{
+    display: block;
+    width: 60px; height: 60px;
+    background: url(../img/goalicon.png);
+    background-size: 100%;
+    margin: 0 auto 20px;
+}
+
+/* section2 시작-------------------------------- */
+
+.sect2{
+    height: 100vh;
+}
+.sect2 .wrap{
+    position: relative;
+}
+.sect2 h2{
+    font-size: 28px;
+    text-align: center;
+}
+.slideTxt{
+    width: 40%; height: 500px;
+    background: rgba(246,242,233,0.9);
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+.animalInfo{
+    position: absolute;
+    padding: 50px 30px;
+    opacity: 0;
+}
+.animalInfo.on{
+    opacity: 1;
+}
+.animalInfo h4{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.animalInfo p{
+    font-size: 17px;
+    line-height: 30px;
+}
+.swiper-container{
+    width: 70%;
+    margin-right: 0;
+    position: static;
+}
+.swiper-wrapper{
+    width: 400%;
+    display: flex;
+    justify-content: space-between;
+}
+.swiper-slide{
+    width: 100%; height: 650px;
+    margin: 0;
+}
+.slide1{
+    background: url(../img/snowleopard.jpg) no-repeat -100px 0;
+    background-size: auto 100%;
+}
+.slide2{
+    background: url(../img/tiger.jpg) no-repeat -300px 0;
+    background-size: auto 100%;
+}
+.slide3{
+    background: url(../img/giantpanda.jpg) no-repeat -200px 0;
+    background-size: auto 100%;
+}
+.slide4{
+    background: url(../img/polarbear.jpg) no-repeat -200px 0;
+    background-size: auto 100%;
+}
+.swiper-button-prev{
+    width: 50px; height: 50px;
+    background: url(../img/left_arrow.png);
+    background-size: 100%;
+    top: 230px; left: 300px;
+    transition: .5s;
+}
+.swiper-button-next{
+    width: 50px; height: 50px;
+    background: url(../img/right_arrow.png);
+    background-size: 100%;
+    top: 230px; right: -80px;
+    transition: .5s;
+}
+.swiper-button-prev:hover{
+    background: url(../img/left_arrow_on.png);
+    background-size: 100%;
+}
+.swiper-button-next:hover{
+    background: url(../img/right_arrow_on.png);
+    background-size: 100%;
+}
+.swiper-button-prev:after{
+    content: none;
+}
+.swiper-button-next:after{
+    content: none;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    width: 40%; bottom: 20px;
+    z-index: 999;
+}
+.swiper-pagination-bullet{
+    width: 7px; height: 7px;
+    border-radius: 0;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0px 10px;
+}
+:root {
+    --swiper-theme-color:  #F8BE03;
+}
+
+
+
+
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px){
+
+}
+/* mobile */
+@media screen and (max-width: 768px){
+
+}
