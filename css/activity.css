@@ -5,15 +5,16 @@ font-family: 'Black Han Sans', sans-serif; */
 .main_visual{
     width: 100%; height: 60vh;
     background: url(../img/20171023_013.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 .main_visual p{
     font-size: 120px;
     color: #fff;
     line-height: 120px;
-    margin-left: 180px;
-    padding-top: 160px;
+    position: absolute;
+    top: 160px; left: 180px;
     letter-spacing: -1px;
     font-weight: 600;
 }
@@ -185,14 +186,12 @@ font-family: 'Black Han Sans', sans-serif; */
     background: url(../img/left_arrow.png);
     background-size: 100%;
     top: 230px; left: 300px;
-    transition: .5s;
 }
 .swiper-button-next{
     width: 50px; height: 50px;
     background: url(../img/right_arrow.png);
     background-size: 100%;
     top: 230px; right: -80px;
-    transition: .5s;
 }
 .swiper-button-prev:hover{
     background: url(../img/left_arrow_on.png);
@@ -222,17 +221,160 @@ font-family: 'Black Han Sans', sans-serif; */
 :root {
     --swiper-theme-color:  #F8BE03;
 }
-
-
-
-
-
-
+.sub2-sect3{
+    height: 130vh;
+    position: relative;
+}
+.sub3Title{
+    width: 100%; height: 500px;
+    background: url(../img/nightsky.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+}
+.sub3Title h2{
+    color: #fff;
+    text-align: center;
+    font-size: 55px;
+    letter-spacing: -1px;
+}
+.sub3Title p{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: -1px;
+    padding-top: 20px;
+}
+.sub2-sect3 .planet{
+    width: 1280px;
+    position: absolute;
+    top: 340px; left: 50%;
+    transform: translate(-50%);
+}
+.sub2-sect3 .planet>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content_row1{
+    margin-bottom: 26px;
+}
+.sub2-sect3 .content>div{
+    width: 300px; height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+.front,.back{
+    width: 100%; height: 100%;
+    position: absolute;
+    transition: all .5s;
+}
+.front {
+    z-index: 2;
+    background: #edd;
+}
+.back {
+    z-index: 1;
+    transform: rotateY(-180deg);
+    background: #F8BE03;
+    padding: 90px 0;
+}
+.content>div:hover .front {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+.content>div:hover .back {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back>*{
+    display: block;
+    text-align: center;
+}
+.back em{
+    font-size: 24px;   
+}
+.back span{
+    font-size: 18px;
+    padding-top: 10px;
+}
+.content_row1 div:nth-child(1) .front{
+    background: url(../img/planet1.jpg) -230px 0;
+    background-size: auto 100%;
+}
+.content_row1 div:nth-child(2) .front{
+    background: url(../img/planet2.jpg) -100px 0;
+    background-size: auto 100%;
+}
+.content_row1 div:nth-child(3) .front{
+    background: url(../img/planet3.jpg) -50px 0;
+    background-size: auto 100%;
+}
+.content_row1 div:nth-child(4) .front{
+    background: url(../img/planet4.jpg);
+    background-size: auto 100%;
+}
+.content_row2 div:nth-child(1) .front{
+    background: url(../img/planet5.jpg) -230px 0;
+    background-size: auto 100%;
+}
+.content_row2 div:nth-child(2) .front{
+    background: url(../img/planet6.jpg) -80px 0;
+    background-size: auto 100%;
+}
+.content_row2 div:nth-child(3) .front{
+    background: url(../img/planet7.jpg) -50px 0;
+    background-size: auto 100%;
+}
+.content_row2 div:nth-child(4) .front{
+    background: url(../img/planet8.jpg) -80px 0;
+    background-size: auto 100%;
+}
+.planetEnd{
+    font-size: 18px;
+    text-align: center;
+    padding: 80px 0;
+}
+.earth{
+    width: 700px; height: 700px;
+    background: url(../img/earth_2.png);
+    background-size: 100%;
+    opacity: .1;
+    position: absolute;
+    bottom: -400px; left: -200px;
+}
 /* tablet */
-@media screen and (min-width: 768px) and (max-width: 1024px){
-
+@media screen and (max-width: 1024px){
+    .main_visual p{
+        font-size: 80px;
+        line-height: 80px;
+        top: 70%; left: 20px;
+    }
 }
 /* mobile */
 @media screen and (max-width: 768px){
-
+    .worldMap {
+        height: 75vh;
+    }
+    .worldMap .mapBG{
+        height: 70vh;
+    }
+    .textBoxAct1{
+        position: static;
+        margin: 80px 30px 40px;
+    }
+    .textBoxAct2{
+        position: static;
+        margin: 40px 30px;
+    }
+    .textBoxAct2 li{
+        margin-left: 30px;
+    }
+    .textBoxAct3{
+        position: static;
+        margin: 40px 30px;
+    }
+    .textLine{
+        display: none;
+    }
 }
