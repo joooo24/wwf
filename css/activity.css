@@ -2,3 +2,379 @@
 /* font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Black Han Sans', sans-serif; */
+.main_visual{
+    width: 100%; height: 60vh;
+    background: url(../img/20171023_013.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.main_visual p{
+    font-size: 120px;
+    color: #fff;
+    line-height: 120px;
+    position: absolute;
+    top: 160px; left: 180px;
+    letter-spacing: -1px;
+    font-weight: 600;
+}
+.wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.title{
+    background: url(../img/bar_b.jpg) no-repeat;
+    padding: 80px 0;
+    position: relative;
+}
+.title h2{
+    font-size: 28px;
+    position: absolute;
+    bottom: 0; left: 35px;
+}
+.worldMap{
+    height: 90vh;
+    position: relative;
+}
+.worldMap>*{
+    position: absolute;
+}
+.worldMap .mapBG{
+    width: 100%; height: 90vh;
+    background: url(../img/map.png) no-repeat center;
+    background-size: 100%;
+    opacity: .5;
+}
+.actText h3{
+    display: inline-block;
+    font-size: 24px;
+    background-color: #000;
+    color: #F8BE03;
+    padding: 5px 8px;
+    font-weight: 500;
+}
+.actText>p{
+    padding-top: 15px;
+}
+.textBoxAct1{
+    top: 150px; left: 250px;
+}
+.textBoxAct2{
+    top: 300px; right: 100px;
+}
+.textBoxAct2 li{
+    list-style: square;
+    padding-top: 15px;
+}
+.textBoxAct3{
+    bottom: 180px; left: 200px;
+}
+.textLine{
+    display: block;
+    width: 70px; height: 3px;
+    background: #000;
+    position: absolute;
+    top: 23px; left: -70px;
+}
+.textLine em.circleB{
+    display: block;
+    width: 20px; height: 20px;
+    border-radius: 100%;
+    border: 2px solid #000;
+    position: absolute;
+    top: -8px; left: -5px;
+}
+.textLine em.circleS{
+    display: block;
+    width: 10px; height: 10px;
+    border-radius: 100%;
+    background: #000;
+    position: absolute;
+    top: -3px;
+}
+.textBoxAct2 .textLine{
+    width: 100px;
+    left: 200px;
+}
+.textBoxAct2 em.circleB{
+    left: 85px;
+}
+.textBoxAct2 em.circleS{
+    right: 0;
+}
+.goal{
+    background: #F8BE03;
+    padding: 30px 0;
+    text-align: center;
+    font-size: 18px;
+}
+.goal_icon{
+    display: block;
+    width: 60px; height: 60px;
+    background: url(../img/goalicon.png);
+    background-size: 100%;
+    margin: 0 auto 20px;
+}
+
+/* section2 시작-------------------------------- */
+
+.sect2{
+    height: 100vh;
+}
+.sect2 .wrap{
+    position: relative;
+}
+.sect2 h2{
+    font-size: 28px;
+    text-align: center;
+}
+.slideTxt{
+    width: 40%; height: 500px;
+    background: rgba(246,242,233,0.9);
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+.animalInfo{
+    position: absolute;
+    padding: 50px 30px;
+    opacity: 0;
+}
+.animalInfo.on{
+    opacity: 1;
+}
+.animalInfo h4{
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.animalInfo p{
+    font-size: 17px;
+    line-height: 30px;
+}
+.swiper-container{
+    width: 70%;
+    margin-right: 0;
+    position: static;
+}
+.swiper-wrapper{
+    width: 400%;
+    display: flex;
+    justify-content: space-between;
+}
+.swiper-slide{
+    width: 100%; height: 650px;
+    margin: 0;
+}
+.slide1{
+    background: url(../img/snowleopard.jpg) no-repeat -100px 0;
+    background-size: auto 100%;
+}
+.slide2{
+    background: url(../img/tiger.jpg) no-repeat -300px 0;
+    background-size: auto 100%;
+}
+.slide3{
+    background: url(../img/giantpanda.jpg) no-repeat -200px 0;
+    background-size: auto 100%;
+}
+.slide4{
+    background: url(../img/polarbear.jpg) no-repeat -200px 0;
+    background-size: auto 100%;
+}
+.swiper-button-prev{
+    width: 50px; height: 50px;
+    background: url(../img/left_arrow.png);
+    background-size: 100%;
+    top: 230px; left: 300px;
+}
+.swiper-button-next{
+    width: 50px; height: 50px;
+    background: url(../img/right_arrow.png);
+    background-size: 100%;
+    top: 230px; right: -80px;
+}
+.swiper-button-prev:hover{
+    background: url(../img/left_arrow_on.png);
+    background-size: 100%;
+}
+.swiper-button-next:hover{
+    background: url(../img/right_arrow_on.png);
+    background-size: 100%;
+}
+.swiper-button-prev:after{
+    content: none;
+}
+.swiper-button-next:after{
+    content: none;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets{
+    width: 40%; bottom: 20px;
+    z-index: 999;
+}
+.swiper-pagination-bullet{
+    width: 7px; height: 7px;
+    border-radius: 0;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
+    margin: 0px 10px;
+}
+:root {
+    --swiper-theme-color:  #F8BE03;
+}
+.sub2-sect3{
+    height: 130vh;
+    position: relative;
+}
+.sub3Title{
+    width: 100%; height: 500px;
+    background: url(../img/nightsky.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 80px 0;
+}
+.sub3Title h2{
+    color: #fff;
+    text-align: center;
+    font-size: 55px;
+    letter-spacing: -1px;
+}
+.sub3Title p{
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: -1px;
+    padding-top: 20px;
+}
+.sub2-sect3 .planet{
+    width: 1280px;
+    position: absolute;
+    top: 340px; left: 50%;
+    transform: translate(-50%);
+}
+.sub2-sect3 .planet>div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.content_row1{
+    margin-bottom: 26px;
+}
+.sub2-sect3 .content>div{
+    width: 300px; height: 300px;
+    position: relative;
+    cursor: pointer;
+}
+.front,.back{
+    width: 100%; height: 100%;
+    position: absolute;
+    transition: all .5s;
+}
+.front {
+    z-index: 2;
+    background: #edd;
+}
+.back {
+    z-index: 1;
+    transform: rotateY(-180deg);
+    background: #F8BE03;
+    padding: 90px 0;
+}
+.content>div:hover .front {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+.content>div:hover .back {
+    z-index: 2;
+    transform: rotateY(0deg);
+}
+.back>*{
+    display: block;
+    text-align: center;
+}
+.back em{
+    font-size: 24px;   
+}
+.back span{
+    font-size: 18px;
+    padding-top: 10px;
+}
+.content_row1 div:nth-child(1) .front{
+    background: url(../img/planet1.jpg) -230px 0;
+    background-size: auto 100%;
+}
+.content_row1 div:nth-child(2) .front{
+    background: url(../img/planet2.jpg) -100px 0;
+    background-size: auto 100%;
+}
+.content_row1 div:nth-child(3) .front{
+    background: url(../img/planet3.jpg) -50px 0;
+    background-size: auto 100%;
+}
+.content_row1 div:nth-child(4) .front{
+    background: url(../img/planet4.jpg);
+    background-size: auto 100%;
+}
+.content_row2 div:nth-child(1) .front{
+    background: url(../img/planet5.jpg) -230px 0;
+    background-size: auto 100%;
+}
+.content_row2 div:nth-child(2) .front{
+    background: url(../img/planet6.jpg) -80px 0;
+    background-size: auto 100%;
+}
+.content_row2 div:nth-child(3) .front{
+    background: url(../img/planet7.jpg) -50px 0;
+    background-size: auto 100%;
+}
+.content_row2 div:nth-child(4) .front{
+    background: url(../img/planet8.jpg) -80px 0;
+    background-size: auto 100%;
+}
+.planetEnd{
+    font-size: 18px;
+    text-align: center;
+    padding: 80px 0;
+}
+.earth{
+    width: 700px; height: 700px;
+    background: url(../img/earth_2.png);
+    background-size: 100%;
+    opacity: .1;
+    position: absolute;
+    bottom: -400px; left: -200px;
+}
+/* tablet */
+@media screen and (max-width: 1024px){
+    .main_visual p{
+        font-size: 80px;
+        line-height: 80px;
+        top: 70%; left: 20px;
+    }
+}
+/* mobile */
+@media screen and (max-width: 768px){
+    .worldMap {
+        height: 75vh;
+    }
+    .worldMap .mapBG{
+        height: 70vh;
+    }
+    .textBoxAct1{
+        position: static;
+        margin: 80px 30px 40px;
+    }
+    .textBoxAct2{
+        position: static;
+        margin: 40px 30px;
+    }
+    .textBoxAct2 li{
+        margin-left: 30px;
+    }
+    .textBoxAct3{
+        position: static;
+        margin: 40px 30px;
+    }
+    .textLine{
+        display: none;
+    }
+}
