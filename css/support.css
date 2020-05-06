@@ -76,7 +76,6 @@ font-family: 'Black Han Sans', sans-serif; */
 
 .kinds{
     width: 100%;
-    height: 50vh;
     display: flex;
     box-shadow:0px 5px 15px 3px rgba(0, 0, 0, .1);
 }
@@ -87,8 +86,19 @@ font-family: 'Black Han Sans', sans-serif; */
 
 .kinds-right{
     width: 30%;
+    height: 100%;
+}
+.sect2-tab{
+    height: 100%;
+    text-align: center;
 }
 
+.sect2-tab li a{
+    width: 100%;
+    height: 100px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+}
 
 /*----------------------support-sect3------------------------*/
 
@@ -111,7 +121,7 @@ font-family: 'Black Han Sans', sans-serif; */
 }
 
 .support-sect3-cont{
-    width: 33.333%;
+    width: 33.3333%;
 }
 
 .support-sect3-wrap{
@@ -159,9 +169,9 @@ font-family: 'Black Han Sans', sans-serif; */
 
 .sponsor{
     width: 100%;
-    height: 30vh;
     box-shadow:0px 5px 15px 3px rgba(0, 0, 0, .1);
     padding: 20px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sponsor p{
@@ -169,22 +179,82 @@ font-family: 'Black Han Sans', sans-serif; */
     text-align: center;
 }
 
+.choice{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.amount{
+    display: flex;
+    border: 1px solid #F8BE03;
+}   
+
+.amount li{
+    width: 100px;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #F8BE03;
+    cursor: pointer;
+}
+
+.amount li:last-child{
+    border: none;
+}
+
+.amount li.on{
+   background-color: #F8BE03;
+   color: #fff;
+}
+
+form input{
+    height: 55px;
+    margin:0 20px 0 5px;
+    border: 1px solid #F8BE03;
+    text-align: center;
+    font-size: 15px;
+}
+
+p.submit a{
+    display: block;
+    width: 100px;
+    background-color: #F8BE03;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+}
 
 .notice{
-    padding: 20px;
+    padding: 30px 20px;
 }
-
-
-
 
 /*---------------------FAQ-----------------------*/
-
-.faq{
-    height: 100vh;
-}
-
 
 .faq h2{
     font-size: 18px;
     border-bottom: 10px solid #F8BE03;
 }
+
+.faq-list li a{
+    display: block;
+    padding: 15px 0 15px 5px;
+    border-bottom: 1px solid #ddd;
+}
+
+.faq-tit{
+    color: #777;
+}
+
+
+
+
+@media screen and (max-width: 1920px) {
+}
+@media screen and (max-width: 769px) {
+}
+@media screen and (max-width: 420px) {
+}
+
