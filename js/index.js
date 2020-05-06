@@ -42,7 +42,10 @@ var swiper = new Swiper('.sub2-sect2 .swiper-container', {
     } else if(sw==2){
         $('.animalInfo').removeClass('on')
         $('.animalInfo:nth-child(3)').addClass('on')
-    }console.log(sw)
+    }else if(sw==3){
+      $('.animalInfo').removeClass('on')
+      $('.animalInfo:nth-child(4)').addClass('on')
+  }console.log(sw)
   })
   $('.sub2-sect2 .swiper-button-prev').click(function(){
     sw -= 1;
