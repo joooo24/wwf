@@ -214,14 +214,14 @@ section:nth-child(n + 2) {
   overflow: hidden;
   cursor: pointer;
 }
-.sub1_sect6 ul li img.on {
-  transform: scale(1.3);
-}
 
 .sub1_sect6 ul li img {
   display: block;
   width: 100%;
   transition: 0.5s;
+}
+.sub1_sect6 ul li img.on {
+  transform: scale(1.3);
 }
 
 .sub1_nametxt {
@@ -298,11 +298,12 @@ p.sub1_active {
 .sub1_sect7 .txtline {
   left: -500px;
 }
-
+/*  */
 .history_tab {
   display: flex;
   justify-content: flex-start;
   margin-top: 100px;
+  margin-bottom: 30px;
 }
 .history_tab li {
   margin-right: 10px;
@@ -314,15 +315,69 @@ p.sub1_active {
   background-color: #eee;
   border-radius: 25px;
   font-weight: 400;
+  color: #333;
 }
+.history_tab li a:hover,
 .history_tab li a.on {
-  font-weight: 600;
+  color: #000;
+
   background-color: #f8be03;
 }
+/*  */
+.history_con {
+  display: flex;
+}
 .history_con > div {
+  position: relative;
   width: 50%;
+  padding-top: 35%;
+  overflow: hidden;
 }
-.history_con_l {
+.history_con_l img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
 }
-.history_con_r {
+.history_con_l img.on {
+  display: block;
 }
+
+.history_txt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 50px;
+  height: 100%;
+  background-color: rgb(250, 249, 249);
+  background-color: #eee;
+  /* background-color: #edf4fb;
+  background-color: #fef7e9; */
+  display: none;
+}
+.history_txt.on {
+  display: block;
+}
+.history_txt::after {
+  content: "";
+  width: 100%;
+  height: 20px;
+  background-color: #f8be03;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.history_txt p {
+  font-size: 16px;
+}
+.history_txt p:first-child {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* 반응형 */
+
+@import media;
