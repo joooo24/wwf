@@ -424,7 +424,9 @@ p.sub1_active.on {
 .sub1_txt p {
   opacity: 0;
 } */
-
+section > div.on {
+  /* top값으로 이동 */
+}
 .txt_bg.on {
   animation: txt 2s cubic-bezier(0, 0, 0.2, 1);
   opacity: 1;
@@ -454,3 +456,8 @@ p.sub1_active.on {
 /* 자바스크립트 섹션값구해서 스크롤 이벤트 발생시키기 */
 
 /* 반응형 */
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 768px) {
+}
