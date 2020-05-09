@@ -78,8 +78,38 @@ $('.S3-name li').click(function(e){
 
 ///////////// sub4
 
+// section1
+
+var swiperVisual = new Swiper('.support-container', {
+  loop: true,
+  effect: 'fade',
+  autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+  },
+  pagination: {
+      el: '.swiper-pagination-main',
+      clickable: true,
+  },
+})
 
 
-// support
+// setInterval(function(){
+//   $('.support-wrap>div:gt(0)').hide()
+//   $('.support-wrap>div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.support-wrap')
+// },5000)
+
+
+// choice 
+$('.amount li').click(function(){
+  $('.amount li').removeClass('on')
+  $(this).addClass('on')
+})
+
 
 // FAQ
+$('.faq-list>li>a').click(function(e){
+  e.preventDefault()
+  $(this).parents('.faq-list').find('.faq-answer').stop().slideUp()
+  $(this).next().stop().slideToggle()
+})
