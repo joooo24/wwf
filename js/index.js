@@ -25,6 +25,23 @@ $(".history_tab a").click(function (e) {
   $(this).addClass("on")
 })
 
+// $("section").eq(0).find("> div").addClass("on")
+
+$(window).scroll(function () {
+  
+
+  $("section > div").removeClass("on")
+
+  $("section").each(function (i) {
+    var secT = $(this).offset().top
+    var scrT = $(window).scrollTop()
+// console.log(secT)
+    if (secT - 500 <= scrT) {
+      $("section").eq(i).find("> div").addClass("on")
+    } //if
+  }) //each
+}) //scroll
+
 // 애니
 
 // $(window).scroll()

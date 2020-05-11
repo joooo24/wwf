@@ -454,3 +454,202 @@ p.sub1_active.on {
 /* 자바스크립트 섹션값구해서 스크롤 이벤트 발생시키기 */
 
 /* 반응형 */
+@media screen and (max-width: 1400px) {
+  .sub1_sect1 .sub1_txtbox {
+    padding-top: -150px;
+    margin-top: -150px;
+    height: 600px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .sub1_sect1 .sub1_txtbox {
+    padding-top: 100px;
+    margin-top: 0px;
+    height: 500px;
+  }
+  .sub1_sect2 .sub1_txtbox {
+    padding-top: 100px;
+    margin-top: 0px;
+    height: 500px;
+  }
+  .sub1_sect3::before {
+    display: none;
+  }
+  .sub1_visit,
+  .sub1_visit::before {
+    width: 100%;
+    float: none;
+  }
+  .sub1_sect3 .sub1_txtbox {
+    right: 0px;
+  }
+  .sub1_sect3 .sub1_txtbox .txtbar {
+    padding-left: 0;
+  }
+  .sub1_sect4 .inner > img {
+    width: 100%;
+  }
+  .sub1_korea {
+    width: 100%;
+    height: 290px;
+    margin: 0 auto;
+  }
+
+  .sub1_korea p,
+  .koreatxt p {
+    font-size: 65px;
+  }
+  .sub1_korea p {
+    bottom: 0px;
+  }
+
+  .koreatxt p {
+    top: 5px;
+  }
+  .sub1_sect5 .sub1_txtbox {
+    height: 600px;
+    right: 0px;
+  }
+  .sub1_sect5 .sub1_txtbox .txtbar {
+    width: 20px;
+    padding-left: 0;
+  }
+  .sub1_picture {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+  .history_con {
+    display: block;
+  }
+  .history_con > div {
+    width: 100%;
+  }
+  .history_con > div.history_con_l {
+    padding-top: 75%;
+}
+  .history_con > div.history_con_r {
+    padding-top: 50%;
+}
+@media screen and (max-width: 768px) {
+  section:nth-child(n + 2) {
+    /* padding: 20px 0; */
+    padding: 0px;
+  }
+  .txt_bg {
+    width: 500px;
+    height: 330px;
+    background-image: url(../img/what.png);
+    background-size: 100%;
+    right: 0;
+  }
+  .txt_bg1 {
+    height: 225px;
+  }
+  .txt_bg2 {
+    height: 295px;
+  }
+  .sub1_txt {
+    height: 350px;
+  }
+  .sub1_sect7 .txt_bg6 {
+    bottom: -80px;
+    width: 442px;
+  }
+  .txtbar {
+    margin-right: 10px;
+  }
+  .txtline img {
+    width: 150%;
+    display: inline-block;
+  }
+  .txtbar img {
+    width: 50%;
+    height: 80%;
+  }
+  .sub1_txtbox {
+    padding: 30px 0;
+  }
+  .sub1_txt p {
+    font-size: 11.5px;
+  }
+  .sub1_sect3 .sub1_txtbox .txtbar {
+    padding-left: 0px;
+  }
+  .sub1_sect3 .sub1_txtbox {
+    right: 0px;
+  }
+  .sub1_sect3 .txtline{
+    left: 100px;
+  }
+  .sub1_sect3 .inner > img {
+    margin: 100px auto 20px;
+    width: 80%;
+  }
+  .sub1_sect4{
+    margin-top: -50px;
+  }
+
+  .sub1_sect4 .inner > img {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .sub1_sect4 .txtline {
+    left: 00px;
+ 
+  }
+  .sub1_sect4 .txtline img{
+       width: 100%;
+  }
+  .sub1_sect5{
+    margin-top: -50px;
+  }
+  .sub1_sect5 .txtline{
+    left: 100px;
+  }
+  .sub1_sect6 ul {
+    width: 100%;
+    margin-top: -35px;
+}
+.sub1_sect6 ul li {
+  width: 85%;
+   margin-bottom: 0;
+  border: 10px solid #fff;
+
+}
+.peoplewith {
+  margin: 0 auto 35px;
+  width: 80%;
+}
+  .sub1_picture {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+
+  .sub1_picture {
+    margin-top: 50px;
+  }
+  .sub1_picture img:nth-child(3) {
+    bottom: -30px;
+ 
+  }
+  .sub1_sect7 .sub1_txtbox {
+    height: 365px;
+}
+  .history_tab{
+    margin-top: 0;
+    justify-content: center;
+
+  }
+  .history_tab li a {
+  font-size: 18px;
+  padding: 5px 15px;
+  
+}
+  .history_con{
+    width: 90%;
+    margin: auto;
+  }
+  .history_con > div.history_con_r {
+    padding-top: 100%;
+  }}
