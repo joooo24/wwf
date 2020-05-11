@@ -89,8 +89,8 @@ $(".S3-name li").click(function (e) {
 
   var S3in = $(this).index()
 
-  $(this).closest("section").find(".S3-sect02-yellowBox li").removeClass("on")
-  $(this).closest("section").find(".S3-sect02-yellowBox li").eq(S3in).addClass("on")
+  $(this).closest("section").find(".S3-main-yellow li").removeClass("on")
+  $(this).closest("section").find(".S3-main-yellow li").eq(S3in).addClass("on")
   $(this).closest("section").find(".S3-video iframe").removeClass("on")
   $(this).closest("section").find(".S3-video iframe").eq(S3in).addClass("on")
 })
