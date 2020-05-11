@@ -290,6 +290,9 @@ p.sub1_active {
 }
 p.sub1_active.on {
   display: block;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .sub1_picture {
@@ -514,6 +517,14 @@ p.sub1_active.on {
     width: 20px;
     padding-left: 0;
   }
+  /*  */
+  .sub1_sect6 ul img{
+    display: none;
+  }
+  .sub1_active{
+    display: block;
+  }
+  /*  */
   .sub1_picture {
     width: 100%;
     margin: 0 auto 50px;
@@ -526,9 +537,10 @@ p.sub1_active.on {
   }
   .history_con > div.history_con_l {
     padding-top: 75%;
-}
+  }
   .history_con > div.history_con_r {
     padding-top: 50%;
+  }
 }
 @media screen and (max-width: 768px) {
   section:nth-child(n + 2) {
@@ -570,7 +582,7 @@ p.sub1_active.on {
     padding: 30px 0;
   }
   .sub1_txt p {
-    font-size: 11.5px;
+    font-size: 13px;
   }
   .sub1_sect3 .sub1_txtbox .txtbar {
     padding-left: 0px;
@@ -578,14 +590,14 @@ p.sub1_active.on {
   .sub1_sect3 .sub1_txtbox {
     right: 0px;
   }
-  .sub1_sect3 .txtline{
+  .sub1_sect3 .txtline {
     left: 100px;
   }
   .sub1_sect3 .inner > img {
     margin: 100px auto 20px;
     width: 80%;
   }
-  .sub1_sect4{
+  .sub1_sect4 {
     margin-top: -50px;
   }
 
@@ -596,31 +608,29 @@ p.sub1_active.on {
   }
   .sub1_sect4 .txtline {
     left: 00px;
- 
   }
-  .sub1_sect4 .txtline img{
-       width: 100%;
+  .sub1_sect4 .txtline img {
+    width: 100%;
   }
-  .sub1_sect5{
+  .sub1_sect5 {
     margin-top: -50px;
   }
-  .sub1_sect5 .txtline{
+  .sub1_sect5 .txtline {
     left: 100px;
   }
   .sub1_sect6 ul {
     width: 100%;
     margin-top: -35px;
-}
-.sub1_sect6 ul li {
-  width: 85%;
-   margin-bottom: 0;
-  border: 10px solid #fff;
-
-}
-.peoplewith {
-  margin: 0 auto 35px;
-  width: 80%;
-}
+  }
+  .sub1_sect6 ul li {
+    width: 85%;
+    margin-bottom: 0;
+    border: 10px solid #fff;
+  }
+  .peoplewith {
+    margin: 0 auto 35px;
+    width: 80%;
+  }
   .sub1_picture {
     width: 100%;
     margin: 0 auto 50px;
@@ -631,25 +641,35 @@ p.sub1_active.on {
   }
   .sub1_picture img:nth-child(3) {
     bottom: -30px;
- 
   }
   .sub1_sect7 .sub1_txtbox {
     height: 365px;
-}
-  .history_tab{
+  }
+  .sub1_sect7 .txtline {
+    margin-right: 100px;
+  }
+  .sub1_sect7 .txtline img {
+    width: 100%;
+    display: inline-block;
+  }
+  .history_tab {
     margin-top: 0;
     justify-content: center;
-
   }
   .history_tab li a {
-  font-size: 18px;
-  padding: 5px 15px;
-  
-}
-  .history_con{
+    font-size: 18px;
+    padding: 5px 15px;
+  }
+  .history_con {
     width: 90%;
     margin: auto;
   }
   .history_con > div.history_con_r {
     padding-top: 100%;
-  }}
+  }
+}
+@media screen and (max-width: 500px) {
+  .sub1_txt p {
+    font-size: 11.5px;
+  }
+}
