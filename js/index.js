@@ -13,7 +13,17 @@
 //   $(this).find(".sub1_active").removeClass('on')
 //   $(".sub1_nametxt").removeClass("on")
 // })
+$("p.sub1_name").click(function () {
+  $("p.sub1_name").removeClass("on")
+  $(this).addClass("on")
+  $(" p.sub1_active").removeClass("on")
+  $(this).next().addClass("on")
+})
 
+$(".sub1_active span").click(function () {
+  $("p.sub1_name").removeClass("on")
+  $(" p.sub1_active").removeClass("on")
+})
 $(".history_tab a").click(function (e) {
   e.preventDefault()
   var idx = $(this).parent("li").index()
@@ -28,14 +38,12 @@ $(".history_tab a").click(function (e) {
 // $("section").eq(0).find("> div").addClass("on")
 
 $(window).scroll(function () {
-  
-
   $("section > div").removeClass("on")
 
   $("section").each(function (i) {
     var secT = $(this).offset().top
     var scrT = $(window).scrollTop()
-// console.log(secT)
+    // console.log(secT)
     if (secT - 500 <= scrT) {
       $("section").eq(i).find("> div").addClass("on")
     } //if
