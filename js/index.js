@@ -69,7 +69,7 @@ var swiper = new Swiper(".sub2-sect2 .swiper-container", {
     prevEl: ".sub2-sect2 .swiper-button-prev",
   },
 })
-var sw = 0
+var sw = 0;
 $(".sub2-sect2 .swiper-button-next").click(function () {
   sw += 1
   if (sw == 1) {
