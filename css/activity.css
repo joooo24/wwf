@@ -252,7 +252,7 @@ font-family: 'Black Han Sans', sans-serif; */
     transform: translate(-50%);
 }
 .sub2-sect3 .planet>div{
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -263,6 +263,7 @@ font-family: 'Black Han Sans', sans-serif; */
     width: 300px; height: 300px;
     position: relative;
     cursor: pointer;
+    transition: .5s;
 }
 .front,.back{
     width: 100%; height: 100%;
@@ -277,7 +278,6 @@ font-family: 'Black Han Sans', sans-serif; */
     z-index: 1;
     transform: rotateY(-180deg);
     background: #F8BE03;
-    padding: 90px 0;
 }
 .content>div:hover .front {
     z-index: 1;
@@ -299,35 +299,35 @@ font-family: 'Black Han Sans', sans-serif; */
     padding-top: 10px;
 }
 .content_row1 div:nth-child(1) .front{
-    background: url(../img/planet1.jpg) -230px 0;
+    background: url(../img/planet1.jpg) center;
     background-size: auto 100%;
 }
 .content_row1 div:nth-child(2) .front{
-    background: url(../img/planet2.jpg) -100px 0;
+    background: url(../img/planet2.jpg) center;
     background-size: auto 100%;
 }
 .content_row1 div:nth-child(3) .front{
-    background: url(../img/planet3.jpg) -50px 0;
+    background: url(../img/planet3.jpg) center;
     background-size: auto 100%;
 }
 .content_row1 div:nth-child(4) .front{
-    background: url(../img/planet4.jpg);
+    background: url(../img/planet4.jpg) center;
     background-size: auto 100%;
 }
 .content_row2 div:nth-child(1) .front{
-    background: url(../img/planet5.jpg) -230px 0;
+    background: url(../img/planet5.jpg) center;
     background-size: auto 100%;
 }
 .content_row2 div:nth-child(2) .front{
-    background: url(../img/planet6.jpg) -80px 0;
+    background: url(../img/planet6.jpg) center;
     background-size: auto 100%;
 }
 .content_row2 div:nth-child(3) .front{
-    background: url(../img/planet7.jpg) -50px 0;
+    background: url(../img/planet7.jpg) center;
     background-size: auto 100%;
 }
 .content_row2 div:nth-child(4) .front{
-    background: url(../img/planet8.jpg) -80px 0;
+    background: url(../img/planet8.jpg) center;
     background-size: auto 100%;
 }
 .planetEnd{
@@ -349,6 +349,21 @@ font-family: 'Black Han Sans', sans-serif; */
         font-size: 80px;
         line-height: 80px;
         top: 70%; left: 20px;
+    }
+    .textBoxAct1{
+        left: 150px;
+    }
+    .textBoxAct2{
+        top: 310px; right: 20px; 
+    }
+    .textBoxAct3{
+        top: 550px; left: 150px;
+    }
+    .sub2-sect3 .planet{
+        width: 900px;
+    }
+    .sub2-sect3 .content > div{
+        width: 200px; height: 200px;
     }
 }
 /* mobile */
