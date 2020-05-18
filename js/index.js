@@ -107,36 +107,33 @@ $(".S3-name li").click(function (e) {
 
 // section1
 
-var swiperVisual = new Swiper('.support-container', {
+var swiperVisual = new Swiper(".support-container", {
   loop: true,
-  effect: 'fade',
+  effect: "fade",
   autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
+    delay: 3500,
+    disableOnInteraction: false,
   },
   pagination: {
-      el: '.swiper-pagination-main',
-      clickable: true,
+    el: ".swiper-pagination-main",
+    clickable: true,
   },
 })
-
 
 // setInterval(function(){
 //   $('.support-wrap>div:gt(0)').hide()
 //   $('.support-wrap>div:first').fadeOut(1000).next().fadeIn(1000).end().appendTo('.support-wrap')
 // },5000)
 
-
-// choice 
-$('.amount li').click(function(){
-  $('.amount li').removeClass('on')
-  $(this).addClass('on')
+// choice
+$(".amount li").click(function () {
+  $(".amount li").removeClass("on")
+  $(this).addClass("on")
 })
 
-
 // FAQ
-$('.faq-list>li>a').click(function(e){
+$(".faq-list>li>a").click(function (e) {
   e.preventDefault()
-  $(this).parents('.faq-list').find('.faq-answer').stop().slideUp()
+  $(this).parents(".faq-list").find(".faq-answer").stop().slideUp()
   $(this).next().stop().slideToggle()
 })
