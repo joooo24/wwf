@@ -44,6 +44,7 @@ font-family: 'Black Han Sans', sans-serif; */
     background: url(../img/map.png) no-repeat center;
     background-size: 100%;
     opacity: .5;
+    z-index: -1;
 }
 .actText h3{
     display: inline-block;
@@ -133,7 +134,7 @@ font-family: 'Black Han Sans', sans-serif; */
     background: rgba(246,242,233,0.9);
     position: absolute;
     bottom: 0;
-    z-index: 999;
+    z-index: 99;
 }
 .animalInfo{
     position: absolute;
@@ -163,22 +164,21 @@ font-family: 'Black Han Sans', sans-serif; */
 }
 .swiper-slide{
     width: 100%; height: 650px;
-    margin: 0;
 }
 .slide1{
-    background: url(../img/snowleopard.jpg) no-repeat -100px 0;
+    background: url(../img/snowleopard.jpg) no-repeat center;
     background-size: auto 100%;
 }
 .slide2{
-    background: url(../img/tiger.jpg) no-repeat -300px 0;
+    background: url(../img/tiger.jpg) no-repeat  center;
     background-size: auto 100%;
 }
 .slide3{
-    background: url(../img/giantpanda.jpg) no-repeat -200px 0;
+    background: url(../img/giantpanda.jpg) no-repeat center;
     background-size: auto 100%;
 }
 .slide4{
-    background: url(../img/polarbear.jpg) no-repeat -200px 0;
+    background: url(../img/polarbear.jpg) no-repeat center;
     background-size: auto 100%;
 }
 .swiper-button-prev{
@@ -186,12 +186,14 @@ font-family: 'Black Han Sans', sans-serif; */
     background: url(../img/left_arrow.png);
     background-size: 100%;
     top: 230px; left: 300px;
+    transition: .5s
 }
 .swiper-button-next{
     width: 50px; height: 50px;
     background: url(../img/right_arrow.png);
     background-size: 100%;
     top: 230px; right: -80px;
+    transition: .5s
 }
 .swiper-button-prev:hover{
     background: url(../img/left_arrow_on.png);
@@ -222,7 +224,7 @@ font-family: 'Black Han Sans', sans-serif; */
     --swiper-theme-color:  #F8BE03;
 }
 .sub2-sect3{
-    height: 130vh;
+    height: 135vh;
     position: relative;
 }
 .sub3Title{
@@ -245,22 +247,27 @@ font-family: 'Black Han Sans', sans-serif; */
     letter-spacing: -1px;
     padding-top: 20px;
 }
+.sub2-sect3 .wrap{
+    position: relative;
+    height: 500px;
+}
 .sub2-sect3 .planet{
-    width: 1280px;
+    width: 100%;
     position: absolute;
-    top: 340px; left: 50%;
+    top: -150px; left: 50%;
     transform: translate(-50%);
 }
 .sub2-sect3 .planet>div{
-    max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .content_row1{
     margin-bottom: 26px;
 }
 .sub2-sect3 .content>div{
-    width: 300px; height: 300px;
+    width: 24%; height: 300px;
     position: relative;
     cursor: pointer;
     transition: .5s;
@@ -346,13 +353,34 @@ font-family: 'Black Han Sans', sans-serif; */
     opacity: .1;
     position: absolute;
     bottom: -400px; left: -200px;
+    z-index: -1;
+}
+/* section4 시작-------------------------- */
+.sub2-sect4{
+    height: 300vh;
+    position: relative;
+}
+.sub2-sect4 h2{
+    font-size: 130px;
+    height: 890px;
+    color: #F8BE03;
+    writing-mode: vertical-rl;
+    position: sticky;
+    top: 8%; left: 83%;
+    border-left: 8px solid #F8BE03;
+    font-weight: 900;
+    line-height: 140px;
+    display: inline-block;
+}
+.sub2-sect4 .wrap{
+    
 }
 /* tablet */
 @media screen and (max-width: 1024px){
     .main_visual p{
         font-size: 80px;
         line-height: 80px;
-        top: 70%; left: 20px;
+        top: 67%; left: 20px;
     }
     .textBoxAct1{
         left: 150px;
@@ -363,17 +391,17 @@ font-family: 'Black Han Sans', sans-serif; */
     .textBoxAct3{
         top: 550px; left: 150px;
     }
-    .sub2-sect3 .planet{
-        width: 900px;
+    .swiper-button-prev{
+        top: 240px; left: 15%;
     }
-    .sub2-sect3 .content > div{
-        width: 200px; height: 200px;
+    .swiper-button-next{
+        top: 240px; right: 73%;
     }
 }
 /* mobile */
 @media screen and (max-width: 768px){
     .worldMap {
-        height: 75vh;
+        height: 80vh;
     }
     .worldMap .mapBG{
         height: 70vh;
@@ -395,5 +423,34 @@ font-family: 'Black Han Sans', sans-serif; */
     }
     .textLine{
         display: none;
+    }
+    .actText>p{
+        font-size: 15px;
+    }
+    .slideTxt{
+        position: static;
+        width: 100%;
+    }
+    .sect2{
+        height: auto;
+    }
+    .swiper-container{
+        width: 100%;
+        margin-left: 0;
+    }
+    .swiper-slide{
+        height: 400px;
+    }
+    .swiper-button-prev{
+        top: 58%; left: 73%;
+    }
+    .swiper-button-next{
+        top: 58%; right: 20px;
+    }
+    .sub2-sect3 .content>div{
+        width: 48%;
+    }
+    .earth{
+        width: 500px; height: 500px;
     }
 }
