@@ -3,7 +3,12 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Black Han Sans', sans-serif; */
 
+
 /*----------------------support-sect1------------------------*/
+
+.support-sect1{
+  width: 100%;
+}
 
 .support-sect1-tit {
   position: absolute;
@@ -46,6 +51,14 @@ font-family: 'Black Han Sans', sans-serif; */
 }
 
 /*----------------------support-sect2------------------------*/
+
+.support-sect2{
+  width: 100%;
+  background-image: url(/img/backgroundimg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
 .figure-box {
   box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.1);
