@@ -2,17 +2,6 @@
 
 ///////////// sub1
 
-// $(".sub1_sect6 ul li").mouseenter(function () {
-//   $(this).find(".sub1_name").hide()
-//   $(this).find(".sub1_active").addClass('on')
-//   $(".sub1_nametxt").removeClass("on")
-//   $(this).find(".sub1_nametxt").addClass("on")
-// })
-// $(".sub1_sect6 ul li").mouseleave(function () {
-//   $(this).find(".sub1_name").show()
-//   $(this).find(".sub1_active").removeClass('on')
-//   $(".sub1_nametxt").removeClass("on")
-// })
 $("p.sub1_name").click(function () {
   $("p.sub1_name").removeClass("on")
   $(this).addClass("on")
@@ -50,9 +39,21 @@ $(window).scroll(function () {
   }) //each
 }) //scroll
 
-// 애니
+// [ each문 이용해서 스크롤 제어하기 ]
+$("section").eq(0).find("article").addClass("on")
 
-// $(window).scroll()
+$(window).scroll(function () {
+  $("section>div").removeClass("on")
+  $("section").each(function (i) {
+    var secT = $(this).offset().top
+    console.log(secT)
+    var scrT = $(window).scrollTop()
+    if (secT - 400 <= scrT) {
+      $("section").eq(i).find(">div").addClass("on")
+    }
+  }) //each
+}) //scroll
+// 애니
 
 ///////////// sub2
 var swiper = new Swiper(".sub2-sect2 .swiper-container", {
