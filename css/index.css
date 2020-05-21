@@ -9,7 +9,8 @@ header {
   height: 80px;
   position: fixed;
   z-index: 999;
-  background: rgba(255, 255, 255, 0.4);
+  background: #fff;
+  border-bottom: 1px solid #ddd;
 }
 header .inner {
   display: flex;
@@ -17,7 +18,7 @@ header .inner {
   align-items: center;
 }
 header h1 {
-  width: 100px;
+  width: 120px;
   padding: 8px 0;
 }
 header h1 a {
@@ -28,7 +29,7 @@ header h1 img {
   width: 100%;
 }
 .nav {
-  width: 1120px;
+  width: 1020px;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -37,24 +38,30 @@ header h1 img {
   width: 25%;
 }
 .nav li a {
-  width: 100%;
+  width: 60%;
   height: 100%;
   display: block;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
   font-weight: 600;
   line-height: 80px;
   position: relative;
+  transition: .5s;
 }
 .nav span {
   position: absolute;
-  left: 0;
-  bottom: 0;
+  /* left: 50%; */
+  top: 50%;
+  transform: translateY(-50%);
   display: block;
   width: 0;
-  height: 5px;
-  background: #f8be03;
+  height: 55px;
+  background: rgba(248, 190, 3, .8);
   transition: 0.5s;
+  z-index: -1;
+}
+.nav li a:hover{
+  color: #000;
 }
 .nav li a:hover span {
   width: 100%;
