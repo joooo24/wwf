@@ -1,5 +1,22 @@
 ///////////// index
-
+$('.nav a').mouseenter(function(){
+  $('.nav em:nth-child(1)').css({color:'#ccc'})
+  $(this).find('span').stop().animate({top:'-100%'},200)
+  $(this).find('em:nth-child(2)').css({'color':'#000'})
+})
+$('.nav a').mouseleave(function(){
+  $(this).find('span').stop().animate({top:'0'},400)
+  $('.nav em:nth-child(1)').css({color:'#000'})
+  $(this).find('em:nth-child(2)').css({'color':'#ccc'})
+})
+var c = 0;
+$('.menu_bar').click(function(){
+  if(c==1){
+    $('.mobile-menu').animate({right:'0'})
+    $('.menu_bar').addClass('on')
+  }
+  
+})
 ///////////// sub1
 
 // $(".sub1_sect6 ul li").mouseenter(function () {

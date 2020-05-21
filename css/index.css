@@ -2,7 +2,9 @@
 /* font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Black Han Sans', sans-serif; */
-
+body{
+  overflow-x: hidden;
+}
 /* header */
 header {
   width: 100%;
@@ -13,23 +15,24 @@ header {
   border-bottom: 1px solid #ddd;
 }
 header .inner {
+  max-width: 1240px; height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 header h1 {
-  width: 120px;
-  padding: 8px 0;
+  width: 120px; height: 100%;
+  display: flex;
+  align-items: center;
 }
 header h1 a {
   display: block;
-  height: 100%;
 }
 header h1 img {
   width: 100%;
 }
 .nav {
-  width: 1020px;
+  width: 1000px;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -38,19 +41,35 @@ header h1 img {
   width: 25%;
 }
 .nav li a {
-  width: 60%;
-  height: 100%;
+  height: 30px;
   display: block;
-  font-size: 22px;
   text-align: center;
-  font-weight: 600;
-  line-height: 80px;
-  position: relative;
   transition: .5s;
+  position: relative;
+  top: 27%;
+  overflow: hidden;
 }
-.nav span {
+.nav li span{
+  width: 100%; height: 200%;
+  position: relative;
+  display: block;
+}
+.nav li span em{
+  width: 100%; height: 50%;
+  font-size: 22px;
   position: absolute;
-  /* left: 50%; */
+  display: block;
+  top: 0;
+  font-weight: 600;
+  transition: .3s;
+}
+.nav li span em:last-child{
+  top: 50%;
+  color: #ccc;
+}
+/* .nav span {
+  position: absolute;
+  left: 50%;
   top: 50%;
   transform: translateY(-50%);
   display: block;
@@ -59,14 +78,13 @@ header h1 img {
   background: rgba(248, 190, 3, .8);
   transition: 0.5s;
   z-index: -1;
-}
+} */
 .nav li a:hover{
   color: #000;
 }
-.nav li a:hover span {
-  width: 100%;
+.menu_bar,.mobile-menu{
+  display: none;
 }
-
 /* sect1 시작--------------------------------- */
 .sect1 {
   height: 100vh;
@@ -117,8 +135,11 @@ header h1 img {
   position: relative;
 }
 
-.sect2_txtbox > div > p,
-span {
+.sect2_txtbox > div > p {
+  font-family: "Black Han Sans", sans-serif;
+  font-size: 70px;
+}
+.sect2_txtbox > div > span {
   font-family: "Black Han Sans", sans-serif;
   font-size: 70px;
 }
@@ -360,4 +381,73 @@ footer div:last-child > div {
   height: 1px;
   background-color: gray;
   margin: 20px 0;
+}
+/* tablet & mobile */
+@media screen and (max-width:1024px){
+  header{
+    padding: 0 20px; 
+  }
+  .nav{
+    width: 800px;
+  }
+}
+/* mobile */
+@media screen and (max-width:768px){
+  header{ height: 70px;}
+  header h1{
+    width: 90px;
+  }
+  .nav{
+    display: none;
+  }
+  .menu_bar{
+    width: 32px; height: 22px;
+    display: block;
+    position: relative;
+  }
+  .menu_bar span{
+    display: block;
+    width: 100%; height: 2px;
+    background: #000;
+    position: absolute;
+    transition: .3s;
+    z-index: 999;
+  }
+  .menu_bar span:nth-child(1){
+    top: 0; left: 0;
+  }
+  .menu_bar span:nth-child(2){
+    top: 10px; left: 0;
+  }
+  .menu_bar span:nth-child(3){
+    bottom: 0px; left: 0;
+  }
+  .menu_bar.on span:nth-child(1){
+    width: 105%;
+    top: 10px; left: -3px;
+    transform: rotate(45deg);
+  }
+  .menu_bar.on span:nth-child(2){
+    opacity: 0;
+  }
+  .menu_bar.on span:nth-child(3){
+    width: 105%;
+    bottom: 10px; left: -3px;
+    transform: rotate(-45deg);
+  }
+  .mobile-menu{
+    position: absolute;
+    top: 0; right: -60%;
+    width: 60%; height: 100vh;
+    background: rgba(0, 0, 0, .5);
+    padding: 20% 80px;
+    display: block;
+  }
+  .mobile-menu li a{
+    display: block;
+    font-size: 22px;
+    color: #fff;
+    padding: 15px 0;
+    display: block;
+  }
 }
