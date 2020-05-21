@@ -386,6 +386,15 @@ section:nth-child(n + 2) {
 
 /* 자바스크립트 섹션값구해서 스크롤 이벤트 발생시키기 */
 
+section > div {
+  opacity: 0;
+  margin-top: 30px;
+  transition: 0.5s;
+}
+section > div.on {
+  margin-top: 0;
+  opacity: 1;
+}
 /* 반응형 */
 
 @media screen and (min-width: 1200px) {
