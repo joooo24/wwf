@@ -382,35 +382,6 @@ footer div:last-child > div {
   background-color: gray;
   margin: 20px 0;
 }
-@media screen and (max-width: 900px) {
-  /*mihyun*/
-  .sect5 > div {
-    padding-top: 45%;
-  }
-  .sect5-title {
-    width: 100% !important;
-    padding-left: 10%;
-  }
-  .sect5Line {
-    display: none;
-  }
-  .sect5 h2 em {
-    font-size: 50px;
-  }
-  .sect5 h2 {
-    font-size: 30px;
-  }
-  footer div:last-child > div {
-    margin: 4% 0;
-  }
-  .ft-none {
-    display: none;
-  }
-  .ft-txt li {
-    margin: 10px 0;
-  }
-  /*mihyun*/
-
 @media screen and (min-width: 1200px) {
 }
 @media screen and (max-width: 1200px) {
@@ -473,4 +444,31 @@ footer div:last-child > div {
   .sect4_txt p {
     font-size: 45px;
   }
+  /*mihyun*/
+  .sect5 > div {
+    padding-top: 45%;
+  }
+  .sect5-title {
+    width: 100% !important;
+    padding-left: 10%;
+  }
+  .sect5Line {
+    display: none;
+  }
+  .sect5 h2 em {
+    font-size: 50px;
+  }
+  .sect5 h2 {
+    font-size: 30px;
+  }
+  footer div:last-child > div {
+    margin: 4% 0;
+  }
+  .ft-none {
+    display: none;
+  }
+  .ft-txt li {
+    margin: 10px 0;
+  }
+  /*mihyun*/
 }
