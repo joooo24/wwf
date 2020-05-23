@@ -3,11 +3,11 @@
 font-family: 'Roboto', sans-serif;
 font-family: 'Black Han Sans', sans-serif; */
 
-
 /*----------------------support-sect1------------------------*/
 
-.support-sect1{
+.support-sect1 {
   width: 100%;
+
 }
 
 .support-sect1-tit {
@@ -21,7 +21,6 @@ font-family: 'Black Han Sans', sans-serif; */
 
 .support-sect1-tit h2 {
   color: #fff;
-  font-size: 90px;
   padding-bottom: 20px;
 }
 .support-sect1-tit button a {
@@ -52,7 +51,7 @@ font-family: 'Black Han Sans', sans-serif; */
 
 /*----------------------support-sect2------------------------*/
 
-.support-sect2{
+.support-sect2 {
   width: 100%;
   background-image: url(/img/backgroundimg.jpg);
   background-repeat: no-repeat;
@@ -60,14 +59,19 @@ font-family: 'Black Han Sans', sans-serif; */
   background-size: cover;
 }
 
+.support-sect2 img {
+  width: 100%;
+}
+
 .figure-box {
-  box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 5px 15px 3px rgba(0, 0, 0, 0.2);
   margin: 20px;
   padding: 10px;
+  text-align: center;
 }
 
 .figure-box img {
-  width: 100%;
+  width: 80%;
 }
 figcaption p {
   padding: 10px 0;
@@ -282,6 +286,18 @@ p.submit a {
 }
 
 @media screen and (max-width: 1200px) {
+  .support-sect1-tit {
+    display: none;
+    font-size: 10px;
+  }
+  .figure-box{
+    width: 80%;
+    margin: 20px auto;
+  }
+  .figure-box img{
+    width: 50%;
+  }
+
   .support-sect3 {
     flex-direction: column;
   }
