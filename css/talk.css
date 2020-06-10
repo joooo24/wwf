@@ -111,15 +111,6 @@ font-family: 'Black Han Sans', sans-serif; */
 }
 .S3-sect02-yellowBox li.on {
   display: block;
-  animation: S3-name 0.5s forwards linear;
-}
-@keyframes S3-name {
-  0% {
-    transform: rotateX(180deg);
-  }
-  100% {
-    transform: rotateX(0deg);
-  }
 }
 .S3-sect03-yellowBox {
   position: relative;

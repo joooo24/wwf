@@ -638,3 +638,8 @@ footer div:last-child ul li a {
     font-size: 30px;
   }
 }
+/*ft font size*/
+footer div:last-child ul li,
+footer div:last-child ul li a{
+  font-size: 14px;
+}
