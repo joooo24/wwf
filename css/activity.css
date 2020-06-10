@@ -2,455 +2,795 @@
 /* font-family: 'Noto Sans KR', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Black Han Sans', sans-serif; */
-.main_visual{
-    width: 100%; height: 60vh;
-    background: url(../img/20171023_013.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
+header {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  z-index: 999;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
 }
-.main_visual p{
-    font-size: 120px;
-    color: #fff;
-    line-height: 120px;
-    position: absolute;
-    top: 160px; left: 180px;
-    letter-spacing: -1px;
-    font-weight: 600;
+header .inner {
+  max-width: 1240px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.wrap{
-    max-width: 1280px;
-    margin: 0 auto;
+header h1 {
+  width: 120px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-.title{
-    background: url(../img/bar_b.jpg) no-repeat;
-    padding: 80px 0;
-    position: relative;
+header h1 a {
+  display: block;
 }
-.title h2{
-    font-size: 28px;
-    position: absolute;
-    bottom: 0; left: 35px;
+header h1 img {
+  width: 100%;
 }
-.worldMap{
-    height: 90vh;
-    position: relative;
+.nav {
+  width: 1000px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
 }
-.worldMap>*{
-    position: absolute;
+.nav li {
+  width: 25%;
 }
-.worldMap .mapBG{
-    width: 100%; height: 90vh;
-    background: url(../img/map.png) no-repeat center;
-    background-size: 100%;
-    opacity: .5;
-    z-index: -1;
+.nav li a {
+  height: 30px;
+  display: block;
+  text-align: center;
+  transition: 0.5s;
+  position: relative;
+  top: 27%;
+  overflow: hidden;
 }
-.actText h3{
-    display: inline-block;
-    font-size: 24px;
-    background-color: #000;
-    color: #F8BE03;
-    padding: 5px 8px;
-    font-weight: 500;
+.nav li span {
+  width: 100%;
+  height: 200%;
+  position: relative;
+  display: block;
 }
-.actText>p{
-    padding-top: 15px;
+.nav li span em {
+  width: 100%;
+  height: 50%;
+  font-size: 22px;
+  position: absolute;
+  display: block;
+  top: 0;
+  font-weight: 600;
+  transition: 0.3s;
 }
-.textBoxAct1{
-    top: 150px; left: 250px;
+.nav li span em:last-child {
+  top: 50%;
+  color: #ccc;
 }
-.textBoxAct2{
-    top: 300px; right: 100px;
+.nav li a:hover {
+  color: #000;
 }
-.textBoxAct2 li{
-    list-style: square;
-    padding-top: 15px;
+.menu_bar,
+.mobile-menu {
+  display: none;
 }
-.textBoxAct3{
-    bottom: 180px; left: 200px;
+/* header-------------------------------------- */
+.main_visual {
+  width: 100%;
+  height: 60vh;
+  background: url(../img/20171023_013.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
 }
-.textLine{
-    display: block;
-    width: 70px; height: 3px;
-    background: #000;
-    position: absolute;
-    top: 23px; left: -70px;
+.main_visual p {
+  font-size: 120px;
+  color: #fff;
+  line-height: 120px;
+  position: absolute;
+  top: 160px;
+  left: 180px;
+  letter-spacing: -1px;
+  font-weight: 600;
 }
-.textLine em.circleB{
-    display: block;
-    width: 20px; height: 20px;
-    border-radius: 100%;
-    border: 2px solid #000;
-    position: absolute;
-    top: -8px; left: -5px;
+.wrap {
+  max-width: 1280px;
+  margin: 0 auto;
 }
-.textLine em.circleS{
-    display: block;
-    width: 10px; height: 10px;
-    border-radius: 100%;
-    background: #000;
-    position: absolute;
-    top: -3px;
+.title {
+  background: url(../img/bar_b.jpg) no-repeat;
+  padding: 80px 0;
+  position: relative;
 }
-.textBoxAct2 .textLine{
-    width: 100px;
-    left: 200px;
+.title h2 {
+  font-size: 28px;
+  position: absolute;
+  bottom: 0;
+  left: 35px;
 }
-.textBoxAct2 em.circleB{
-    left: 85px;
+.worldMap {
+  height: 90vh;
+  position: relative;
 }
-.textBoxAct2 em.circleS{
-    right: 0;
+.worldMap > * {
+  position: absolute;
 }
-.goal{
-    background: #F8BE03;
-    padding: 30px 0;
-    text-align: center;
-    font-size: 18px;
+.worldMap .mapBG {
+  width: 100%;
+  height: 90vh;
+  background: url(../img/map.png) no-repeat center;
+  background-size: 100%;
+  opacity: 0.5;
+  z-index: -1;
 }
-.goal_icon{
-    display: block;
-    width: 60px; height: 60px;
-    background: url(../img/goalicon.png);
-    background-size: 100%;
-    margin: 0 auto 20px;
+.actText h3 {
+  display: inline-block;
+  font-size: 24px;
+  background-color: #000;
+  color: #f8be03;
+  padding: 5px 8px;
+  font-weight: 500;
+}
+.actText > p {
+  padding-top: 15px;
+}
+.textBoxAct1 {
+  top: 150px;
+  left: 250px;
+}
+.textBoxAct2 {
+  top: 300px;
+  right: 100px;
+}
+.textBoxAct2 li {
+  list-style: square;
+  padding-top: 15px;
+}
+.textBoxAct3 {
+  bottom: 180px;
+  left: 200px;
+}
+.textLine {
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  top: 23px;
+  left: -70px;
+}
+.textLine em.circleB {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  border: 2px solid #000;
+  position: absolute;
+  top: -8px;
+  left: -5px;
+}
+.textLine em.circleS {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #000;
+  position: absolute;
+  top: -3px;
+}
+.textBoxAct2 .textLine {
+  width: 100px;
+  left: 200px;
+}
+.textBoxAct2 em.circleB {
+  left: 85px;
+}
+.textBoxAct2 em.circleS {
+  right: 0;
+}
+.goal {
+  background: #f8be03;
+  padding: 30px 0;
+  text-align: center;
+  font-size: 18px;
+}
+.goal_icon {
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: url(../img/goalicon.png);
+  background-size: 100%;
+  margin: 0 auto 20px;
 }
 
 /* section2 시작-------------------------------- */
 
-.sect2{
-    height: 100vh;
+.sect2 {
+  height: 100vh;
 }
-.sect2 .wrap{
-    position: relative;
+.sect2 .wrap {
+  position: relative;
 }
-.sect2 h2{
-    font-size: 28px;
-    text-align: center;
+.sect2 h2 {
+  font-size: 28px;
+  text-align: center;
 }
-.slideTxt{
-    width: 40%; height: 500px;
-    background: rgba(246,242,233,0.9);
-    position: absolute;
-    bottom: 0;
-    z-index: 99;
+.slideTxt {
+  width: 40%;
+  height: 500px;
+  background: rgba(246, 242, 233, 0.9);
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
 }
-.animalInfo{
-    position: absolute;
-    padding: 50px 30px;
-    opacity: 0;
+.animalInfo {
+  position: absolute;
+  padding: 50px 30px;
+  opacity: 0;
 }
-.animalInfo.on{
-    opacity: 1;
+.animalInfo.on {
+  opacity: 1;
 }
-.animalInfo h4{
-    font-size: 24px;
-    padding-bottom: 20px;
+.animalInfo h4 {
+  font-size: 24px;
+  padding-bottom: 20px;
 }
-.animalInfo p{
-    font-size: 17px;
-    line-height: 30px;
+.animalInfo p {
+  font-size: 17px;
+  line-height: 30px;
 }
-.swiper-container{
-    width: 70%;
-    margin-right: 0;
-    position: static;
+.swiper-container {
+  width: 70%;
+  margin-right: 0;
+  position: static;
 }
-.swiper-wrapper{
-    width: 400%;
-    display: flex;
-    justify-content: space-between;
+.swiper-wrapper {
+  width: 400%;
+  display: flex;
+  justify-content: space-between;
 }
-.swiper-slide{
-    width: 100%; height: 650px;
+.swiper-slide {
+  width: 100%;
+  height: 650px;
 }
-.slide1{
-    background: url(../img/snowleopard.jpg) no-repeat center;
-    background-size: auto 100%;
+.slide1 {
+  background: url(../img/snowleopard.jpg) no-repeat center;
+  background-size: auto 100%;
 }
-.slide2{
-    background: url(../img/tiger.jpg) no-repeat  center;
-    background-size: auto 100%;
+.slide2 {
+  background: url(../img/tiger.jpg) no-repeat center;
+  background-size: auto 100%;
 }
-.slide3{
-    background: url(../img/giantpanda.jpg) no-repeat center;
-    background-size: auto 100%;
+.slide3 {
+  background: url(../img/giantpanda.jpg) no-repeat center;
+  background-size: auto 100%;
 }
-.slide4{
-    background: url(../img/polarbear.jpg) no-repeat center;
-    background-size: auto 100%;
+.slide4 {
+  background: url(../img/polarbear.jpg) no-repeat center;
+  background-size: auto 100%;
 }
-.swiper-button-prev{
-    width: 50px; height: 50px;
-    background: url(../img/left_arrow.png);
-    background-size: 100%;
-    top: 230px; left: 300px;
-    transition: .5s
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  background: url(../img/left_arrow.png);
+  background-size: 100%;
+  top: 230px;
+  left: 300px;
+  transition: 0.5s;
 }
-.swiper-button-next{
-    width: 50px; height: 50px;
-    background: url(../img/right_arrow.png);
-    background-size: 100%;
-    top: 230px; right: -80px;
-    transition: .5s
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  background: url(../img/right_arrow.png);
+  background-size: 100%;
+  top: 230px;
+  right: -80px;
+  transition: 0.5s;
 }
-.swiper-button-prev:hover{
-    background: url(../img/left_arrow_on.png);
-    background-size: 100%;
+.swiper-button-prev:hover {
+  background: url(../img/left_arrow_on.png);
+  background-size: 100%;
 }
-.swiper-button-next:hover{
-    background: url(../img/right_arrow_on.png);
-    background-size: 100%;
+.swiper-button-next:hover {
+  background: url(../img/right_arrow_on.png);
+  background-size: 100%;
 }
-.swiper-button-prev:after{
-    content: none;
+.swiper-button-prev:after {
+  content: none;
 }
-.swiper-button-next:after{
-    content: none;
+.swiper-button-next:after {
+  content: none;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets{
-    width: 40%; bottom: 20px;
-    z-index: 999;
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: 40%;
+  bottom: 20px;
+  z-index: 99;
 }
-.swiper-pagination-bullet{
-    width: 7px; height: 7px;
-    border-radius: 0;
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+  border-radius: 0;
 }
-.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet{
-    margin: 0px 10px;
+.swiper-container-horizontal
+  > .swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0px 10px;
 }
 :root {
-    --swiper-theme-color:  #F8BE03;
+  --swiper-theme-color: #f8be03;
 }
-.sub2-sect3{
-    height: 135vh;
-    position: relative;
+.sub2-sect3 {
+  height: 135vh;
+  position: relative;
 }
-.sub3Title{
-    width: 100%; height: 500px;
-    background: url(../img/nightsky.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 80px 0;
+.sub3Title {
+  width: 100%;
+  height: 500px;
+  background: url(../img/nightsky.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0;
 }
-.sub3Title h2{
-    color: #fff;
-    text-align: center;
-    font-size: 55px;
-    letter-spacing: -1px;
+.sub3Title h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 55px;
+  letter-spacing: -1px;
 }
-.sub3Title p{
-    color: #fff;
-    text-align: center;
-    font-size: 25px;
-    letter-spacing: -1px;
-    padding-top: 20px;
+.sub3Title p {
+  color: #fff;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: -1px;
+  padding-top: 20px;
 }
-.sub2-sect3 .wrap{
-    position: relative;
-    height: 500px;
+.sub2-sect3 .wrap {
+  position: relative;
+  height: 500px;
 }
-.sub2-sect3 .planet{
-    width: 100%;
-    position: absolute;
-    top: -150px; left: 50%;
-    transform: translate(-50%);
+.sub2-sect3 .planet {
+  width: 100%;
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  transform: translate(-50%);
 }
-.sub2-sect3 .planet>div{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.sub2-sect3 .planet > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.content_row1{
-    margin-bottom: 26px;
+.content_row1 {
+  margin-bottom: 26px;
 }
-.sub2-sect3 .content>div{
-    width: 24%; height: 300px;
-    position: relative;
-    cursor: pointer;
-    transition: .5s;
+.sub2-sect3 .content > div {
+  width: 24%;
+  height: 300px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.5s;
 }
-.front,.back{
-    width: 100%; height: 100%;
-    position: absolute;
-    transition: all .5s;
+.front,
+.back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: all 0.5s;
 }
 .front {
-    z-index: 2;
-    background: #edd;
+  z-index: 2;
+  background: #edd;
 }
 .back {
-    z-index: 1;
-    transform: rotateY(-180deg);
-    background: #F8BE03;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  z-index: 1;
+  transform: rotateY(-180deg);
+  background: #f8be03;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.content>div:hover .front {
-    z-index: 1;
-    transform: rotateY(180deg);
+.content > div:hover .front {
+  z-index: 1;
+  transform: rotateY(180deg);
 }
-.content>div:hover .back {
-    z-index: 2;
-    transform: rotateY(0deg);
+.content > div:hover .back {
+  z-index: 2;
+  transform: rotateY(0deg);
 }
-.back>*{
-    display: block;
-    text-align: center;
+.back > * {
+  display: block;
+  text-align: center;
 }
-.back em{
-    font-size: 24px;   
+.back em {
+  font-size: 24px;
 }
-.back span{
-    font-size: 18px;
-    padding-top: 10px;
+.back span {
+  font-size: 18px;
+  padding-top: 10px;
 }
-.content_row1 div:nth-child(1) .front{
-    background: url(../img/planet1.jpg) center;
-    background-size: auto 100%;
+.content_row1 div:nth-child(1) .front {
+  background: url(../img/planet1.jpg) center;
+  background-size: auto 100%;
 }
-.content_row1 div:nth-child(2) .front{
-    background: url(../img/planet2.jpg) center;
-    background-size: auto 100%;
+.content_row1 div:nth-child(2) .front {
+  background: url(../img/planet2.jpg) center;
+  background-size: auto 100%;
 }
-.content_row1 div:nth-child(3) .front{
-    background: url(../img/planet3.jpg) center;
-    background-size: auto 100%;
+.content_row1 div:nth-child(3) .front {
+  background: url(../img/planet3.jpg) center;
+  background-size: auto 100%;
 }
-.content_row1 div:nth-child(4) .front{
-    background: url(../img/planet4.jpg) center;
-    background-size: auto 100%;
+.content_row1 div:nth-child(4) .front {
+  background: url(../img/planet4.jpg) center;
+  background-size: auto 100%;
 }
-.content_row2 div:nth-child(1) .front{
-    background: url(../img/planet5.jpg) center;
-    background-size: auto 100%;
+.content_row2 div:nth-child(1) .front {
+  background: url(../img/planet5.jpg) center;
+  background-size: auto 100%;
 }
-.content_row2 div:nth-child(2) .front{
-    background: url(../img/planet6.jpg) center;
-    background-size: auto 100%;
+.content_row2 div:nth-child(2) .front {
+  background: url(../img/planet6.jpg) center;
+  background-size: auto 100%;
 }
-.content_row2 div:nth-child(3) .front{
-    background: url(../img/planet7.jpg) center;
-    background-size: auto 100%;
+.content_row2 div:nth-child(3) .front {
+  background: url(../img/planet7.jpg) center;
+  background-size: auto 100%;
 }
-.content_row2 div:nth-child(4) .front{
-    background: url(../img/planet8.jpg) center;
-    background-size: auto 100%;
+.content_row2 div:nth-child(4) .front {
+  background: url(../img/planet8.jpg) center;
+  background-size: auto 100%;
 }
-.planetEnd{
-    font-size: 18px;
-    text-align: center;
-    padding: 80px 0;
+.planetEnd {
+  font-size: 18px;
+  text-align: center;
+  padding: 80px 0;
 }
-.earth{
-    width: 700px; height: 700px;
-    background: url(../img/earth_2.png);
-    background-size: 100%;
-    opacity: .1;
-    position: absolute;
-    bottom: -400px; left: -200px;
-    z-index: -1;
+.earth {
+  width: 700px;
+  height: 700px;
+  background: url(../img/earth_2.png);
+  background-size: 100%;
+  opacity: 0.1;
+  position: absolute;
+  bottom: -400px;
+  left: -200px;
+  z-index: -1;
 }
 /* section4 시작-------------------------- */
-.sub2-sect4{
-    height: 300vh;
-    position: relative;
+.sub2-sect4 {
+  height: 150vh;
+  position: relative;
 }
-.sub2-sect4 h2{
-    font-size: 130px;
-    height: 890px;
-    color: #F8BE03;
-    writing-mode: vertical-rl;
-    position: sticky;
-    top: 8%; left: 83%;
-    border-left: 8px solid #F8BE03;
-    font-weight: 900;
-    line-height: 140px;
-    display: inline-block;
+.sub2-sect4 h2 {
+  font-size: 130px;
+  height: 890px;
+  color: #f8be03;
+  writing-mode: vertical-rl;
+  position: sticky;
+  top: 8%;
+  left: 83%;
+  border-left: 8px solid #f8be03;
+  font-weight: 900;
+  line-height: 140px;
+  display: inline-block;
 }
 .sub2-sect4 .wrap{
-    
+    width: 1280px;
+    position: absolute;
+    left: 50%; top: 0;
+    transform: translateX(-50%);
+}
+.hourwrap{
+    padding-bottom: 100px;
+}
+.sub2-sect4 h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-left: 80px;
+    position: relative;
+}
+.sub2-sect4 h3::after{
+    content: '';
+    width: 70px; height: 5px;
+    background: #25aae1;
+    position: absolute;
+    left: 0; top: 50%;
+    transform: translateY(-50%);
+}
+.sub2-sect4 p{
+    font-size: 20px;
+    line-height: 40px;
+}
+.sub2-sect4 video{
+    width: 95%;
+}
+
+
+
+
+/* footer------------------------------------- */
+footer {
+  width: 100%;
+  background-color: #323232;
+  margin-top: 200px;
+  align-items: center;
+  justify-content: center;
+  padding: 2%;
+}
+footer .ft-logo {
+  text-align: center;
+}
+footer .ft-logo img {
+  width: 60%;
+  opacity: 0.5;
+}
+footer div:last-child {
+  height: 100%;
+}
+footer div:last-child .ft-list {
+  height: 40px;
+  border-bottom: 1px solid #fff;
+  margin-bottom: 10px;
+}
+footer div:last-child .ft-list li {
+  float: left;
+  margin: 0 2%;
+}
+footer div:last-child .ft-list li:nth-child(1) {
+  margin-left: 0 !important;
+}
+.ft-bar {
+  color: gray !important;
+}
+li .ft-bar {
+  margin: 0 8px;
+  display: inline-block;
+}
+footer div:last-child ul li,
+footer div:last-child ul li a {
+  color: white;
+  font-weight: 100;
+  font-size: 0.8vw;
 }
 /* tablet */
-@media screen and (max-width: 1024px){
-    .main_visual p{
-        font-size: 80px;
-        line-height: 80px;
-        top: 67%; left: 20px;
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 0 20px;
+  }
+  .nav {
+    width: 800px;
+  }
+  .main_visual p {
+    font-size: 80px;
+    line-height: 80px;
+    top: 67%;
+    left: 20px;
+  }
+  .textBoxAct1 {
+    left: 150px;
+  }
+  .textBoxAct2 {
+    top: 310px;
+    right: 20px;
+  }
+  .textBoxAct3 {
+    top: 550px;
+    left: 150px;
+  }
+  .swiper-button-prev {
+    top: 240px;
+    left: 15%;
+  }
+  .swiper-button-next {
+    top: 240px;
+    right: 73%;
+  }
+  .sub2-sect3 .planet > div {
+    padding: 10px 20px;
+    align-content: space-between;
+  }
+  .sub2-sect3 .planet > div > div {
+    height: 250px;
+  }
+  .content_row1 {
+    margin: 0;
+  }
+  .sub2-sect4 .wrap{
+      width: 80vw;
+      left: 43%;
+  }
+  .sub2-sect4 h3{
+      font-size: 24px;
+  }
+  .sub2-sect4 p{
+      font-size: 17px;
+      line-height: 25px;
+  }
+}
+/* tablet only */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .sub2-sect3{
+        height: 1300px;
     }
-    .textBoxAct1{
-        left: 150px;
-    }
-    .textBoxAct2{
-        top: 310px; right: 20px; 
-    }
-    .textBoxAct3{
-        top: 550px; left: 150px;
-    }
-    .swiper-button-prev{
-        top: 240px; left: 15%;
-    }
-    .swiper-button-next{
-        top: 240px; right: 73%;
-    }
+  .sub2-sect3 .planet > div {
+    height: 260px;
+  }
+  .sub2-sect3 .wrap{
+    height: 400px;
+}
+.sub2-sect4 h2{
+    font-size: 120px;
+    left: 100%;
+}
+.sub2-sect4 {
+    height: 110vh;
+  }
 }
 /* mobile */
-@media screen and (max-width: 768px){
-    .worldMap {
-        height: 80vh;
-    }
-    .worldMap .mapBG{
-        height: 70vh;
-    }
-    .textBoxAct1{
-        position: static;
-        margin: 80px 30px 40px;
-    }
-    .textBoxAct2{
-        position: static;
-        margin: 40px 30px;
-    }
-    .textBoxAct2 li{
-        margin-left: 30px;
-    }
-    .textBoxAct3{
-        position: static;
-        margin: 40px 30px;
-    }
-    .textLine{
-        display: none;
-    }
-    .actText>p{
-        font-size: 15px;
-    }
-    .slideTxt{
-        position: static;
-        width: 100%;
-    }
-    .sect2{
-        height: auto;
-    }
-    .swiper-container{
-        width: 100%;
-        margin-left: 0;
-    }
-    .swiper-slide{
-        height: 400px;
-    }
-    .swiper-button-prev{
-        top: 58%; left: 73%;
-    }
-    .swiper-button-next{
-        top: 58%; right: 20px;
-    }
-    .sub2-sect3 .content>div{
-        width: 48%;
-    }
-    .earth{
-        width: 500px; height: 500px;
-    }
+@media screen and (max-width: 768px) {
+  header {
+    height: 70px;
+  }
+  header h1 {
+    width: 90px;
+  }
+  .nav {
+    display: none;
+  }
+  .menu_bar {
+    width: 32px;
+    height: 22px;
+    display: block;
+    position: relative;
+  }
+  .menu_bar span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #000;
+    position: absolute;
+    transition: 0.3s;
+    z-index: 999;
+  }
+  .menu_bar span:nth-child(1) {
+    top: 0;
+    left: 0;
+  }
+  .menu_bar span:nth-child(2) {
+    top: 10px;
+    left: 0;
+  }
+  .menu_bar span:nth-child(3) {
+    bottom: 0px;
+    left: 0;
+  }
+  .menu_bar.on span:nth-child(1) {
+    width: 105%;
+    top: 10px;
+    left: -3px;
+    transform: rotate(45deg);
+  }
+  .menu_bar.on span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu_bar.on span:nth-child(3) {
+    width: 105%;
+    bottom: 10px;
+    left: -3px;
+    transform: rotate(-45deg);
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    right: -60%;
+    width: 60%;
+    height: 100vh;
+    background: #fff;
+    padding: 20% 80px;
+    display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .mobile-menu li a {
+    display: block;
+    font-size: 22px;
+    color: #000;
+    padding: 15px 0;
+    display: block;
+  }
+  /* header-------------------------------- */
+  .worldMap {
+    height: 80vh;
+  }
+  .worldMap .mapBG {
+    height: 70vh;
+  }
+  .textBoxAct1 {
+    position: static;
+    margin: 80px 30px 40px;
+  }
+  .textBoxAct2 {
+    position: static;
+    margin: 40px 30px;
+  }
+  .textBoxAct2 li {
+    margin-left: 30px;
+  }
+  .textBoxAct3 {
+    position: static;
+    margin: 40px 30px;
+  }
+  .textLine {
+    display: none;
+  }
+  .actText > p {
+    font-size: 15px;
+  }
+  .slideTxt {
+    position: static;
+    width: 100%;
+  }
+  .sect2 {
+    height: auto;
+  }
+  .swiper-container {
+    width: 100%;
+    margin-left: 0;
+  }
+  .swiper-slide {
+    height: 400px;
+  }
+  .swiper-button-prev {
+    top: 58%;
+    left: 73%;
+  }
+  .swiper-button-next {
+    top: 58%;
+    right: 20px;
+  }
+/* swiper------------------------- */
+.sub2-sect3{
+    height: 1700px;
+}
+.sub2-sect3 .wrap{
+    height: 900px;
+}
+.sub2-sect3 .content{
+    height: 540px;
+  }
+.sub2-sect3 .content > div {
+    width: 48%;
+  }
+  .earth {
+    width: 500px;
+    height: 500px;
+  }
+  .sub2-sect4 {
+      height: 100vh;
+  }
+  .sub2-sect4 .wrap{
+    width: 100%;
+    position: static;
+    transform: translateX(0);
+    padding: 0 20px;
+  }
+  .hourwrap{
+      padding-bottom: 50px;
+  }
+  .sub2-sect4 h2 {
+    font-size: 50px; height: 110px;
+    writing-mode: horizontal-tb;
+    position: static;
+    border-left: none;
+    border-bottom: 8px solid #f8be03;
+    display: inline-block;
+    padding-left: 20px;
+    margin-bottom: 40px;
+  }
+  .connectearth img{
+    width: 80%;
+  }
+  .sub2-sect4 video{ width: 100%;}
 }

@@ -9,11 +9,18 @@ $(".nav a").mouseleave(function () {
   $(".nav em:nth-child(1)").css({ color: "#000" })
   $(this).find("em:nth-child(2)").css({ color: "#ccc" })
 })
-var c = 0
-$(".menu_bar").click(function () {
-  if (c == 1) {
+let click = 0;
+$(".menu_bar").click(function (e) {
+  e.preventDefault()
+
+  click=!click
+
+  if (click) {
     $(".mobile-menu").animate({ right: "0" })
     $(".menu_bar").addClass("on")
+  } else {
+    $(".mobile-menu").animate({ right: "-60%" })
+    $(".menu_bar").removeClass("on")
   }
 })
 ///////////// sub1
@@ -72,10 +79,9 @@ $(window).scroll(function () {
 // 애니
 
 ///////////// sub2
-var swiper = new Swiper(".sub2-sect2 .swiper-container", {
+var swiperS2 = new Swiper(".sub2-sect2 .swiper-container", {
   slidesPerView: 1,
   spaceBetween: 0,
-  loop: true,
   speed: 700,
   pagination: {
     el: ".sub2-sect2 .swiper-pagination",
@@ -86,25 +92,13 @@ var swiper = new Swiper(".sub2-sect2 .swiper-container", {
     prevEl: ".sub2-sect2 .swiper-button-prev",
   },
 })
-var sw = 0
-$(".sub2-sect2 .swiper-button-next").click(function () {
-  sw += 1
-  if (sw == 1) {
-    $(".animalInfo").removeClass("on")
-    $(".animalInfo:nth-child(2)").addClass("on")
-  } else if (sw == 2) {
-    $(".animalInfo").removeClass("on")
-    $(".animalInfo:nth-child(3)").addClass("on")
-  } else if (sw == 3) {
-    $(".animalInfo").removeClass("on")
-    $(".animalInfo:nth-child(4)").addClass("on")
-  }
-  console.log(sw)
+
+swiperS2.on("slideChange", function () {
+  var activeidx = swiperS2.activeIndex
+  $(".slideTxt .animalInfo").removeClass("on")
+  $(".slideTxt .animalInfo").eq(activeidx).addClass("on")
 })
-$(".sub2-sect2 .swiper-button-prev").click(function () {
-  sw -= 1
-  console.log(sw)
-})
+
 ///////////// sub3
 
 $(".S3-name li").click(function (e) {

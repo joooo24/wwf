@@ -71,18 +71,6 @@ header h1 img {
   top: 50%;
   color: #ccc;
 }
-/* .nav span {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translateY(-50%);
-  display: block;
-  width: 0;
-  height: 55px;
-  background: rgba(248, 190, 3, 0.8);
-  transition: 0.5s;
-  z-index: -1;
-} */
 .nav li a:hover {
   color: #000;
 }
@@ -362,6 +350,7 @@ header h1 img {
   background-color: #00aeef;
   font-family: "Noto Sans KR", sans-serif;
 }
+/* footer------------------------------------- */
 footer {
   width: 100%;
   background-color: #323232;
@@ -607,14 +596,15 @@ footer div:last-child ul li a {
     right: -60%;
     width: 60%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: #fff;
     padding: 20% 80px;
     display: block;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   }
   .mobile-menu li a {
     display: block;
     font-size: 22px;
-    color: #fff;
+    color: #000;
     padding: 15px 0;
     display: block;
   }
