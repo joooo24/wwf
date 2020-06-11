@@ -318,7 +318,7 @@ header h1 img {
   --swiper-theme-color: #f8be03;
 }
 .sub2-sect3 {
-  height: 135vh;
+  height: 150vh;
   position: relative;
 }
 .sub3Title {
@@ -458,7 +458,7 @@ header h1 img {
 }
 /* section4 시작-------------------------- */
 .sub2-sect4 {
-  height: 150vh;
+  height: 170vh;
   position: relative;
 }
 .sub2-sect4 h2 {
@@ -624,7 +624,7 @@ footer div:last-child ul li a {
     left: 100%;
   }
   .sub2-sect4 {
-    height: 110vh;
+    height: 1200px;
   }
 }
 /* mobile */
@@ -761,12 +761,13 @@ footer div:last-child ul li a {
   .sub2-sect3 .content > div {
     width: 48%;
   }
+  .planetEnd{ padding: 80px 20px;}
   .earth {
     width: 500px;
     height: 500px;
   }
   .sub2-sect4 {
-    height: 100vh;
+    height: 1100px;
   }
   .sub2-sect4 .wrap {
     width: 100%;
@@ -793,6 +794,24 @@ footer div:last-child ul li a {
   }
   .sub2-sect4 video {
     width: 100%;
+  }
+  footer {
+    padding: 3%;
+    flex-direction: column;
+    align-items: center;
+  }
+  footer div:last-child > div {
+    margin: 4% 0;
+  }
+  footer .ft-logo {
+    width: 60%;
+    margin: 20px 0;
+  }
+  .ft-none {
+    display: none;
+  }
+  .ft-txt li {
+    margin: 10px 0;
   }
   /*ft font size*/
   footer div:last-child ul li,
