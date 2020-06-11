@@ -501,7 +501,14 @@ footer div:last-child ul li a {
   .nav {
     width: 800px;
   }
-
+  .sect1{
+    top: 80px; height: 650px;
+  }
+  .sect1 video {
+    width: 120%;
+    margin-top: -68px;
+    margin-left: -100px
+  }
   /*sect2 혜원*/
 
   .sect2_bgB{
@@ -597,7 +604,7 @@ footer div:last-child ul li a {
     width: 60%;
     height: 100vh;
     background: #fff;
-    padding: 20% 80px;
+    padding: 20% 60px;
     display: block;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
   }
@@ -607,6 +614,14 @@ footer div:last-child ul li a {
     color: #000;
     padding: 15px 0;
     display: block;
+  }
+  .sect1{
+    top: 70px; height: 400px;
+  }
+  .sect1 video {
+    width: 120%;
+    margin-top: -40px;
+    margin-left: -50px;
   }
 
   .sect2_bgB{
